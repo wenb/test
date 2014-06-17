@@ -1,0 +1,129 @@
+
+            <!DOCTYPE html><html>
+            <head><meta charset="utf-8"><title>fmbtandroid visual log</title>
+            <SCRIPT><!--
+            function showHide(eid){
+                if (document.getElementById(eid).style.display != 'inline'){
+                    document.getElementById(eid).style.display = 'inline';
+                } else {
+                    document.getElementById(eid).style.display = 'none';
+                }
+            }
+            // --></SCRIPT>
+            <style>
+                td { vertical-align: top }
+                ul { list-style-type: none }
+                .funccalls { display: none }
+            </style>
+            </head><body>
+            
+
+<ul><li><table><tr><td><div class="time" id="1402284790.512399"><a id="time1402284790.512399">1402284790.512399</a></div></td><td><div class="step"><a id="blockId0" href="javascript:showHide('S0')">1. exe_</a></div><div class="funccalls" id="S0"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1402284790.512512"><a id="time1402284790.512512">1402284790.512512</a></div></td><td><a title="homeLauncher/case.py:11"><div class="call">pressHome()</div></a></td>
+             </tr>
+             
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1402284790.512649"><a id="time1402284790.512649">1402284790.512649</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtandroid.py:522"><div class="call">pressKey('KEYCODE_HOME')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1402284790.520649"><a id="time1402284790.520649">1402284790.520649</a></div></td><td><div class="returnvalue"><a title="pressKey">== True</a></div></td>
+             </tr>
+             </table></tr>
+
+             <tr>
+                 <td><div class="time" id="1402284790.520771"><a id="time1402284790.520771">1402284790.520771</a></div></td><td><div class="returnvalue"><a title="pressHome">== True</a></div></td>
+             </tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1402284790.524256"><a id="time1402284790.524256">1402284790.524256</a></div></td><td><a title="homeLauncher/case.py:12"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1402284792.140702"><a id="time1402284792.140702">1402284792.140702</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/cts_tester/fMBT/testCases/autoBZ/homeLauncher/screenshots/20140609-113310-524388-Baytrail253F4A61.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1402284790.524256 refreshScreenshot() at homeLauncher/case.py:12" src="screenshots/20140609-113310-524388-Baytrail253F4A61.png" width="240" alt="screenshots/20140609-113310-524388-Baytrail253F4A61.png" /></td></tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1402284792.142681"><a id="time1402284792.142681">1402284792.142681</a></div></td><td><a title="homeLauncher/case.py:15"><div class="call">waitBitmap('home-icon.png')</div></a></td>
+             </tr>
+             
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1402284792.142759"><a id="time1402284792.142759">1402284792.142759</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtgti.py:2146"><div class="call">waitAnyBitmap(['home-icon.png'])</div></a></td>
+             </tr>
+             
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1402284792.142901"><a id="time1402284792.142901">1402284792.142901</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtgti.py:2084"><div class="call">findItemsByBitmap('home-icon.png')</div></a></td>
+             </tr>
+             <tr><td></td><td><img class="call:findItemsByBitmap" title="" src="home-icon.png"  alt="home-icon.png" /></td></tr>
+             <tr>
+                 <td><div class="time" id="1402284792.182825"><a id="time1402284792.182825">1402284792.182825</a></div></td><td><div class="returnvalue"><a title="findItemsByBitmap">== not found in</a></div></td>
+             </tr><tr><td></td><td><img class="return:findItemsByBitmap" title="1402284790.524256 refreshScreenshot() at homeLauncher/case.py:12" src="screenshots/20140609-113310-524388-Baytrail253F4A61.png" width="240" alt="screenshots/20140609-113310-524388-Baytrail253F4A61.png" /></td></tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1402284793.184059"><a id="time1402284793.184059">1402284793.184059</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtgti.py:2050"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1402284794.770274"><a id="time1402284794.770274">1402284794.770274</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/cts_tester/fMBT/testCases/autoBZ/homeLauncher/screenshots/20140609-113313-184258-Baytrail253F4A61.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1402284793.184059 refreshScreenshot() at /usr/local/lib/python2.7/dist-packages/fmbtgti.py:2050" src="screenshots/20140609-113313-184258-Baytrail253F4A61.png" width="240" alt="screenshots/20140609-113313-184258-Baytrail253F4A61.png" /></td></tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1402284794.770462"><a id="time1402284794.770462">1402284794.770462</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtgti.py:2084"><div class="call">findItemsByBitmap('home-icon.png')</div></a></td>
+             </tr>
+             <tr><td></td><td><img class="call:findItemsByBitmap" title="" src="home-icon.png"  alt="home-icon.png" /></td></tr>
+             <tr>
+                 <td><div class="time" id="1402284794.810546"><a id="time1402284794.810546">1402284794.810546</a></div></td><td><div class="returnvalue"><a title="findItemsByBitmap">== not found in</a></div></td>
+             </tr><tr><td></td><td><img class="return:findItemsByBitmap" title="1402284793.184059 refreshScreenshot() at /usr/local/lib/python2.7/dist-packages/fmbtgti.py:2050" src="screenshots/20140609-113313-184258-Baytrail253F4A61.png" width="240" alt="screenshots/20140609-113313-184258-Baytrail253F4A61.png" /></td></tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1402284795.811793"><a id="time1402284795.811793">1402284795.811793</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtgti.py:2050"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1402284797.461590"><a id="time1402284797.461590">1402284797.461590</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/cts_tester/fMBT/testCases/autoBZ/homeLauncher/screenshots/20140609-113315-811983-Baytrail253F4A61.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1402284795.811793 refreshScreenshot() at /usr/local/lib/python2.7/dist-packages/fmbtgti.py:2050" src="screenshots/20140609-113315-811983-Baytrail253F4A61.png" width="240" alt="screenshots/20140609-113315-811983-Baytrail253F4A61.png" /></td></tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1402284797.461756"><a id="time1402284797.461756">1402284797.461756</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtgti.py:2084"><div class="call">findItemsByBitmap('home-icon.png')</div></a></td>
+             </tr>
+             <tr><td></td><td><img class="call:findItemsByBitmap" title="" src="home-icon.png"  alt="home-icon.png" /></td></tr>
+             <tr>
+                 <td><div class="time" id="1402284797.501698"><a id="time1402284797.501698">1402284797.501698</a></div></td><td><div class="returnvalue"><a title="findItemsByBitmap">== not found in</a></div></td>
+             </tr><tr><td></td><td><img class="return:findItemsByBitmap" title="1402284795.811793 refreshScreenshot() at /usr/local/lib/python2.7/dist-packages/fmbtgti.py:2050" src="screenshots/20140609-113315-811983-Baytrail253F4A61.png" width="240" alt="screenshots/20140609-113315-811983-Baytrail253F4A61.png" /></td></tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1402284798.502943"><a id="time1402284798.502943">1402284798.502943</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtgti.py:2050"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1402284800.077233"><a id="time1402284800.077233">1402284800.077233</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/cts_tester/fMBT/testCases/autoBZ/homeLauncher/screenshots/20140609-113318-503131-Baytrail253F4A61.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1402284798.502943 refreshScreenshot() at /usr/local/lib/python2.7/dist-packages/fmbtgti.py:2050" src="screenshots/20140609-113318-503131-Baytrail253F4A61.png" width="240" alt="screenshots/20140609-113318-503131-Baytrail253F4A61.png" /></td></tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1402284800.077401"><a id="time1402284800.077401">1402284800.077401</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtgti.py:2084"><div class="call">findItemsByBitmap('home-icon.png')</div></a></td>
+             </tr>
+             <tr><td></td><td><img class="call:findItemsByBitmap" title="" src="home-icon.png"  alt="home-icon.png" /></td></tr>
+             <tr>
+                 <td><div class="time" id="1402284800.117436"><a id="time1402284800.117436">1402284800.117436</a></div></td><td><div class="returnvalue"><a title="findItemsByBitmap">== not found in</a></div></td>
+             </tr><tr><td></td><td><img class="return:findItemsByBitmap" title="1402284798.502943 refreshScreenshot() at /usr/local/lib/python2.7/dist-packages/fmbtgti.py:2050" src="screenshots/20140609-113318-503131-Baytrail253F4A61.png" width="240" alt="screenshots/20140609-113318-503131-Baytrail253F4A61.png" /></td></tr>
+             </table></tr>
+
+             <tr>
+                 <td><div class="time" id="1402284800.117532"><a id="time1402284800.117532">1402284800.117532</a></div></td><td><div class="returnvalue"><a title="waitAnyBitmap">== []</a></div></td>
+             </tr>
+             </table></tr>
+
+             <tr>
+                 <td><div class="time" id="1402284800.117575"><a id="time1402284800.117575">1402284800.117575</a></div></td><td><div class="returnvalue"><a title="waitBitmap">== False</a></div></td>
+             </tr>
+             </table></tr>
