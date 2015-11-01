@@ -1,0 +1,297 @@
+
+            <!DOCTYPE html><html>
+            <head><meta charset="utf-8"><title>fmbtandroid visual log</title>
+            <SCRIPT><!--
+            function showHide(eid){
+                if (document.getElementById(eid).style.display != 'inline'){
+                    document.getElementById(eid).style.display = 'inline';
+                } else {
+                    document.getElementById(eid).style.display = 'none';
+                }
+            }
+            // --></SCRIPT>
+            <style>
+                td { vertical-align: top }
+                ul { list-style-type: none }
+                .funccalls { display: none }
+            </style>
+            </head><body>
+            
+
+<ul><li><table><tr><td><div class="time" id="1404873899.003131"><a id="time1404873899.003131">1404873899.003131</a></div></td><td><div class="step"><a id="blockId0" href="javascript:showHide('S0')">1. &lt;module&gt;</a></div><div class="funccalls" id="S0"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404873899.003271"><a id="time1404873899.003271">1404873899.003271</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">pressPower(long='True')</div></a></td>
+             </tr>
+             
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404873899.003412"><a id="time1404873899.003412">1404873899.003412</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtandroid.py:560"><div class="call">pressKey('KEYCODE_POWER', long='True')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1404873901.024057"><a id="time1404873901.024057">1404873901.024057</a></div></td><td><div class="returnvalue"><a title="pressKey">== True</a></div></td>
+             </tr>
+             </table></tr>
+
+             <tr>
+                 <td><div class="time" id="1404873901.024235"><a id="time1404873901.024235">1404873901.024235</a></div></td><td><div class="returnvalue"><a title="pressPower">== True</a></div></td>
+             </tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1404873901.691030"><a id="time1404873901.691030">1404873901.691030</a></div></td><td><div class="step"><a id="blockId1" href="javascript:showHide('S1')">2. &lt;module&gt;</a></div><div class="funccalls" id="S1"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404873901.691150"><a id="time1404873901.691150">1404873901.691150</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1404873902.610752"><a id="time1404873902.610752">1404873902.610752</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/114114/screenshots/20140709-104501-691261-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1404873901.691150 refreshScreenshot() at <string>:1" src="screenshots/20140709-104501-691261-RHBED246400081.png" width="240" alt="screenshots/20140709-104501-691261-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1404873902.627757"><a id="time1404873902.627757">1404873902.627757</a></div></td><td><div class="step"><a id="blockId2" href="javascript:showHide('S2')">3. &lt;module&gt;</a></div><div class="funccalls" id="S2"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404873902.627815"><a id="time1404873902.627815">1404873902.627815</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/114114/screenshots/20140709-104501-691261-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1404873902.641216"><a id="time1404873902.641216">1404873902.641216</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/114114/screenshots/20140709-104501-691261-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1404873902.627815 refreshScreenshot() at <string>:1" src="screenshots/20140709-104501-691261-RHBED246400081.png" width="240" alt="screenshots/20140709-104501-691261-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1404873903.987090"><a id="time1404873903.987090">1404873903.987090</a></div></td><td><div class="step"><a id="blockId3" href="javascript:showHide('S3')">4. &lt;module&gt;</a></div><div class="funccalls" id="S3"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404873903.987224"><a id="time1404873903.987224">1404873903.987224</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshView()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1404873905.997998"><a id="time1404873905.997998">1404873905.997998</a></div></td><td><div class="returnvalue"><a title="refreshView">== View(items=39, dump="/home/slave/tmp/testautomation/TestCases/MRD8/114114/screenshots/20140709-104505-978879-RHBED246400081.view")</a></div></td>
+             </tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1404873907.515051"><a id="time1404873907.515051">1404873907.515051</a></div></td><td><div class="step"><a id="blockId4" href="javascript:showHide('S4')">5. &lt;module&gt;</a></div><div class="funccalls" id="S4"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404873907.515182"><a id="time1404873907.515182">1404873907.515182</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">tapText('Power off')</div></a></td>
+             </tr>
+             
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404873907.515356"><a id="time1404873907.515356">1404873907.515356</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtandroid.py:814"><div class="call">tapItem(&lt;fmbtandroid.ViewItem object at 0x3955410&gt;)</div></a></td>
+             </tr>
+             
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404873907.515516"><a id="time1404873907.515516">1404873907.515516</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtgti.py:2016"><div class="call">tap((414, 83))</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1404873907.818374"><a id="time1404873907.818374">1404873907.818374</a></div></td><td><div class="returnvalue"><a title="tap">== True</a></div></td>
+             </tr><tr><td></td><td><img class="return:tap" title="1404873902.627815 refreshScreenshot() at <string>:1" src="screenshots/20140709-104501-691261-RHBED246400081.png.00001.png" width="240" alt="screenshots/20140709-104501-691261-RHBED246400081.png.00001.png" /></td></tr>
+             </table></tr>
+
+             <tr>
+                 <td><div class="time" id="1404873907.818481"><a id="time1404873907.818481">1404873907.818481</a></div></td><td><div class="returnvalue"><a title="tapItem">== True</a></div></td>
+             </tr>
+             </table></tr>
+
+             <tr>
+                 <td><div class="time" id="1404873907.818523"><a id="time1404873907.818523">1404873907.818523</a></div></td><td><div class="returnvalue"><a title="tapText">== True</a></div></td>
+             </tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1404873918.603125"><a id="time1404873918.603125">1404873918.603125</a></div></td><td><div class="step"><a id="blockId5" href="javascript:showHide('S5')">6. &lt;module&gt;</a></div><div class="funccalls" id="S5"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404873918.603276"><a id="time1404873918.603276">1404873918.603276</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">pressPower(long='True')</div></a></td>
+             </tr>
+             
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404873918.603418"><a id="time1404873918.603418">1404873918.603418</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtandroid.py:560"><div class="call">pressKey('KEYCODE_POWER', long='True')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1404873920.614169"><a id="time1404873920.614169">1404873920.614169</a></div></td><td><div class="returnvalue"><a title="pressKey">== True</a></div></td>
+             </tr>
+             </table></tr>
+
+             <tr>
+                 <td><div class="time" id="1404873920.614309"><a id="time1404873920.614309">1404873920.614309</a></div></td><td><div class="returnvalue"><a title="pressPower">== True</a></div></td>
+             </tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1404873925.939028"><a id="time1404873925.939028">1404873925.939028</a></div></td><td><div class="step"><a id="blockId6" href="javascript:showHide('S6')">7. &lt;module&gt;</a></div><div class="funccalls" id="S6"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404873925.939162"><a id="time1404873925.939162">1404873925.939162</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1404873926.884733"><a id="time1404873926.884733">1404873926.884733</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/114114/screenshots/20140709-104525-939272-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1404873925.939162 refreshScreenshot() at <string>:1" src="screenshots/20140709-104525-939272-RHBED246400081.png" width="240" alt="screenshots/20140709-104525-939272-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1404873926.901422"><a id="time1404873926.901422">1404873926.901422</a></div></td><td><div class="step"><a id="blockId7" href="javascript:showHide('S7')">8. &lt;module&gt;</a></div><div class="funccalls" id="S7"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404873926.901480"><a id="time1404873926.901480">1404873926.901480</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/114114/screenshots/20140709-104525-939272-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1404873926.916367"><a id="time1404873926.916367">1404873926.916367</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/114114/screenshots/20140709-104525-939272-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1404873926.901480 refreshScreenshot() at <string>:1" src="screenshots/20140709-104525-939272-RHBED246400081.png" width="240" alt="screenshots/20140709-104525-939272-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1404873929.091502"><a id="time1404873929.091502">1404873929.091502</a></div></td><td><div class="step"><a id="blockId8" href="javascript:showHide('S8')">9. &lt;module&gt;</a></div><div class="funccalls" id="S8"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404873929.091655"><a id="time1404873929.091655">1404873929.091655</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshView()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1404873930.934745"><a id="time1404873930.934745">1404873930.934745</a></div></td><td><div class="returnvalue"><a title="refreshView">== View(items=39, dump="/home/slave/tmp/testautomation/TestCases/MRD8/114114/screenshots/20140709-104530-916686-RHBED246400081.view")</a></div></td>
+             </tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1404874069.706153"><a id="time1404874069.706153">1404874069.706153</a></div></td><td><div class="step"><a id="blockId9" href="javascript:showHide('S9')">10. &lt;module&gt;</a></div><div class="funccalls" id="S9"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404874069.706286"><a id="time1404874069.706286">1404874069.706286</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">tapOcrText('Power off')</div></a></td>
+             </tr>
+             
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404874069.706463"><a id="time1404874069.706463">1404874069.706463</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtgti.py:2038"><div class="call">findItemsByOcr('Power off')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1404874072.438699"><a id="time1404874072.438699">1404874072.438699</a></div></td><td><div class="returnvalue"><a title="findItemsByOcr">== ['GUIItem("OCR text (match 1.00)", bbox=(198, 514, 379, 548), find="Power off", found="Power off", screenshot="/home/slave/tmp/testautomation/TestCases/MRD8/114114/screenshots/20140709-104525-939272-RHBED246400081.png")']</a></div></td>
+             </tr><tr><td></td><td><img class="return:findItemsByOcr" title="1404873926.901480 refreshScreenshot() at <string>:1" src="screenshots/20140709-104525-939272-RHBED246400081.png.00001.png" width="240" alt="screenshots/20140709-104525-939272-RHBED246400081.png.00001.png" /></td></tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404874072.438996"><a id="time1404874072.438996">1404874072.438996</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtgti.py:2041"><div class="call">tapItem(&lt;fmbtgti.GUIItem object at 0x41b83d0&gt;)</div></a></td>
+             </tr>
+             
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404874072.439147"><a id="time1404874072.439147">1404874072.439147</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtgti.py:2016"><div class="call">tap((288, 531))</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1404874072.560728"><a id="time1404874072.560728">1404874072.560728</a></div></td><td><div class="returnvalue"><a title="tap">== True</a></div></td>
+             </tr><tr><td></td><td><img class="return:tap" title="1404873926.901480 refreshScreenshot() at <string>:1" src="screenshots/20140709-104525-939272-RHBED246400081.png.00002.png" width="240" alt="screenshots/20140709-104525-939272-RHBED246400081.png.00002.png" /></td></tr>
+             </table></tr>
+
+             <tr>
+                 <td><div class="time" id="1404874072.560927"><a id="time1404874072.560927">1404874072.560927</a></div></td><td><div class="returnvalue"><a title="tapItem">== True</a></div></td>
+             </tr>
+             </table></tr>
+
+             <tr>
+                 <td><div class="time" id="1404874072.561026"><a id="time1404874072.561026">1404874072.561026</a></div></td><td><div class="returnvalue"><a title="tapOcrText">== True</a></div></td>
+             </tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1404874252.576876"><a id="time1404874252.576876">1404874252.576876</a></div></td><td><div class="step"><a id="blockId10" href="javascript:showHide('S10')">11. &lt;module&gt;</a></div><div class="funccalls" id="S10"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404874252.577008"><a id="time1404874252.577008">1404874252.577008</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">pressPower(long='True')</div></a></td>
+             </tr>
+             
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404874252.577144"><a id="time1404874252.577144">1404874252.577144</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtandroid.py:560"><div class="call">pressKey('KEYCODE_POWER', long='True')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1404874254.588051"><a id="time1404874254.588051">1404874254.588051</a></div></td><td><div class="returnvalue"><a title="pressKey">== True</a></div></td>
+             </tr>
+             </table></tr>
+
+             <tr>
+                 <td><div class="time" id="1404874254.588182"><a id="time1404874254.588182">1404874254.588182</a></div></td><td><div class="returnvalue"><a title="pressPower">== True</a></div></td>
+             </tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1404874254.598331"><a id="time1404874254.598331">1404874254.598331</a></div></td><td><div class="step"><a id="blockId11" href="javascript:showHide('S11')">12. &lt;module&gt;</a></div><div class="funccalls" id="S11"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404874254.598461"><a id="time1404874254.598461">1404874254.598461</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1404874255.689764"><a id="time1404874255.689764">1404874255.689764</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/114114/screenshots/20140709-105054-598575-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1404874254.598461 refreshScreenshot() at <string>:1" src="screenshots/20140709-105054-598575-RHBED246400081.png" width="240" alt="screenshots/20140709-105054-598575-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1404874255.709953"><a id="time1404874255.709953">1404874255.709953</a></div></td><td><div class="step"><a id="blockId12" href="javascript:showHide('S12')">13. &lt;module&gt;</a></div><div class="funccalls" id="S12"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404874255.710019"><a id="time1404874255.710019">1404874255.710019</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/114114/screenshots/20140709-105054-598575-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1404874255.723166"><a id="time1404874255.723166">1404874255.723166</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/114114/screenshots/20140709-105054-598575-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1404874255.710019 refreshScreenshot() at <string>:1" src="screenshots/20140709-105054-598575-RHBED246400081.png" width="240" alt="screenshots/20140709-105054-598575-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1404874255.733921"><a id="time1404874255.733921">1404874255.733921</a></div></td><td><div class="step"><a id="blockId13" href="javascript:showHide('S13')">14. &lt;module&gt;</a></div><div class="funccalls" id="S13"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404874255.734053"><a id="time1404874255.734053">1404874255.734053</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshView()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1404874257.584812"><a id="time1404874257.584812">1404874257.584812</a></div></td><td><div class="returnvalue"><a title="refreshView">== View(items=39, dump="/home/slave/tmp/testautomation/TestCases/MRD8/114114/screenshots/20140709-105057-564052-RHBED246400081.view")</a></div></td>
+             </tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1404874257.592544"><a id="time1404874257.592544">1404874257.592544</a></div></td><td><div class="step"><a id="blockId14" href="javascript:showHide('S14')">15. &lt;module&gt;</a></div><div class="funccalls" id="S14"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404874257.592625"><a id="time1404874257.592625">1404874257.592625</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">tapOcrText('Power off')</div></a></td>
+             </tr>
+             
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404874257.592722"><a id="time1404874257.592722">1404874257.592722</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtgti.py:2038"><div class="call">findItemsByOcr('Power off')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1404874260.016110"><a id="time1404874260.016110">1404874260.016110</a></div></td><td><div class="returnvalue"><a title="findItemsByOcr">== ['GUIItem("OCR text (match 1.00)", bbox=(198, 514, 379, 548), find="Power off", found="Power off", screenshot="/home/slave/tmp/testautomation/TestCases/MRD8/114114/screenshots/20140709-105054-598575-RHBED246400081.png")']</a></div></td>
+             </tr><tr><td></td><td><img class="return:findItemsByOcr" title="1404874255.710019 refreshScreenshot() at <string>:1" src="screenshots/20140709-105054-598575-RHBED246400081.png.00001.png" width="240" alt="screenshots/20140709-105054-598575-RHBED246400081.png.00001.png" /></td></tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404874260.016416"><a id="time1404874260.016416">1404874260.016416</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtgti.py:2041"><div class="call">tapItem(&lt;fmbtgti.GUIItem object at 0x39533d0&gt;)</div></a></td>
+             </tr>
+             
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404874260.016565"><a id="time1404874260.016565">1404874260.016565</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtgti.py:2016"><div class="call">tap((288, 531))</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1404874260.184652"><a id="time1404874260.184652">1404874260.184652</a></div></td><td><div class="returnvalue"><a title="tap">== True</a></div></td>
+             </tr><tr><td></td><td><img class="return:tap" title="1404874255.710019 refreshScreenshot() at <string>:1" src="screenshots/20140709-105054-598575-RHBED246400081.png.00002.png" width="240" alt="screenshots/20140709-105054-598575-RHBED246400081.png.00002.png" /></td></tr>
+             </table></tr>
+
+             <tr>
+                 <td><div class="time" id="1404874260.184853"><a id="time1404874260.184853">1404874260.184853</a></div></td><td><div class="returnvalue"><a title="tapItem">== True</a></div></td>
+             </tr>
+             </table></tr>
+
+             <tr>
+                 <td><div class="time" id="1404874260.184960"><a id="time1404874260.184960">1404874260.184960</a></div></td><td><div class="returnvalue"><a title="tapOcrText">== True</a></div></td>
+             </tr>
+             </table></tr>

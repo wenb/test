@@ -1,0 +1,134 @@
+
+            <!DOCTYPE html><html>
+            <head><meta charset="utf-8"><title>fmbtandroid visual log</title>
+            <SCRIPT><!--
+            function showHide(eid){
+                if (document.getElementById(eid).style.display != 'inline'){
+                    document.getElementById(eid).style.display = 'inline';
+                } else {
+                    document.getElementById(eid).style.display = 'none';
+                }
+            }
+            // --></SCRIPT>
+            <style>
+                td { vertical-align: top }
+                ul { list-style-type: none }
+                .funccalls { display: none }
+            </style>
+            </head><body>
+            
+
+<ul><li><table><tr><td><div class="time" id="1404455158.021176"><a id="time1404455158.021176">1404455158.021176</a></div></td><td><div class="step"><a id="blockId0" href="javascript:showHide('S0')">1. exe</a></div><div class="funccalls" id="S0"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404455158.021287"><a id="time1404455158.021287">1404455158.021287</a></div></td><td><a title="case.py:7"><div class="call">shell('am start -n com.android.music/.MusicBrowserActivity')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1404455158.607358"><a id="time1404455158.607358">1404455158.607358</a></div></td><td><div class="returnvalue"><a title="shell">== Starting: Intent { cmp=com.android.music/.MusicBrowserActivity }
+</a></div></td>
+             </tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404455158.608069"><a id="time1404455158.608069">1404455158.608069</a></div></td><td><a title="case.py:8"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1404455159.333658"><a id="time1404455159.333658">1404455159.333658</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Audio_113650/screenshots/20140704-142558-608204-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1404455158.608069 refreshScreenshot() at case.py:8" src="screenshots/20140704-142558-608204-RHBED246400081.png" width="240" alt="screenshots/20140704-142558-608204-RHBED246400081.png" /></td></tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404455159.334248"><a id="time1404455159.334248">1404455159.334248</a></div></td><td><a title="case.py:9"><div class="call">refreshView()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1404455161.087254"><a id="time1404455161.087254">1404455161.087254</a></div></td><td><div class="returnvalue"><a title="refreshView">== View(items=35, dump="/home/slave/tmp/testautomation/TestCases/MRD8/Audio_113650/screenshots/20140704-142601-071905-RHBED246400081.view")</a></div></td>
+             </tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404455161.087490"><a id="time1404455161.087490">1404455161.087490</a></div></td><td><a title="case.py:10"><div class="call">tap((0.9, 0.95))</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1404455161.190153"><a id="time1404455161.190153">1404455161.190153</a></div></td><td><div class="returnvalue"><a title="tap">== True</a></div></td>
+             </tr><tr><td></td><td><img class="return:tap" title="1404455158.608069 refreshScreenshot() at case.py:8" src="screenshots/20140704-142558-608204-RHBED246400081.png.00001.png" width="240" alt="screenshots/20140704-142558-608204-RHBED246400081.png.00001.png" /></td></tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404455161.190856"><a id="time1404455161.190856">1404455161.190856</a></div></td><td><a title="case.py:11"><div class="call">pressVolumeDown()</div></a></td>
+             </tr>
+             
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404455161.191019"><a id="time1404455161.191019">1404455161.191019</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtandroid.py:584"><div class="call">pressKey('KEYCODE_VOLUME_DOWN')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1404455161.193361"><a id="time1404455161.193361">1404455161.193361</a></div></td><td><div class="returnvalue"><a title="pressKey">== True</a></div></td>
+             </tr>
+             </table></tr>
+
+             <tr>
+                 <td><div class="time" id="1404455161.193481"><a id="time1404455161.193481">1404455161.193481</a></div></td><td><div class="returnvalue"><a title="pressVolumeDown">== True</a></div></td>
+             </tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404455161.193917"><a id="time1404455161.193917">1404455161.193917</a></div></td><td><a title="case.py:12"><div class="call">pressVolumeUp()</div></a></td>
+             </tr>
+             
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404455161.194052"><a id="time1404455161.194052">1404455161.194052</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtandroid.py:576"><div class="call">pressKey('KEYCODE_VOLUME_UP')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1404455161.352729"><a id="time1404455161.352729">1404455161.352729</a></div></td><td><div class="returnvalue"><a title="pressKey">== True</a></div></td>
+             </tr>
+             </table></tr>
+
+             <tr>
+                 <td><div class="time" id="1404455161.352849"><a id="time1404455161.352849">1404455161.352849</a></div></td><td><div class="returnvalue"><a title="pressVolumeUp">== True</a></div></td>
+             </tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404455161.353286"><a id="time1404455161.353286">1404455161.353286</a></div></td><td><a title="case.py:13"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1404455162.078164"><a id="time1404455162.078164">1404455162.078164</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Audio_113650/screenshots/20140704-142601-353400-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1404455161.353286 refreshScreenshot() at case.py:13" src="screenshots/20140704-142601-353400-RHBED246400081.png" width="240" alt="screenshots/20140704-142601-353400-RHBED246400081.png" /></td></tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404455162.078770"><a id="time1404455162.078770">1404455162.078770</a></div></td><td><a title="case.py:14"><div class="call">tap((0.48, 0.88))</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1404455162.167576"><a id="time1404455162.167576">1404455162.167576</a></div></td><td><div class="returnvalue"><a title="tap">== True</a></div></td>
+             </tr><tr><td></td><td><img class="return:tap" title="1404455161.353286 refreshScreenshot() at case.py:13" src="screenshots/20140704-142601-353400-RHBED246400081.png.00001.png" width="240" alt="screenshots/20140704-142601-353400-RHBED246400081.png.00001.png" /></td></tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404455162.168338"><a id="time1404455162.168338">1404455162.168338</a></div></td><td><a title="case.py:16"><div class="call">waitBitmap('Music-pause.png')</div></a></td>
+             </tr>
+             
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404455162.168501"><a id="time1404455162.168501">1404455162.168501</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtgti.py:2217"><div class="call">waitAnyBitmap(['Music-pause.png'])</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1404455162.168760"><a id="time1404455162.168760">1404455162.168760</a></div></td><td><div class="exception"><a title="File /usr/local/lib/python2.7/dist-packages/fmbtgti.py, line 1179, in abspath
+    raise ValueError('Bitmap %s not readable in bitmapPath %s' % (bitmap, ':'.join(path)))">!! ValueError: Bitmap "Music-pause.png" not readable in bitmapPath /home/slave/tmp/testautomation/TestCases/MRD8/Audio_113650/TestCases/MRD8/Audio_113650
+</a></div></td>
+             </tr>
+             </table></tr>
+
+             <tr>
+                 <td><div class="time" id="1404455162.169011"><a id="time1404455162.169011">1404455162.169011</a></div></td><td><div class="exception"><a title="File /usr/local/lib/python2.7/dist-packages/fmbtgti.py, line 1179, in abspath
+    raise ValueError('Bitmap %s not readable in bitmapPath %s' % (bitmap, ':'.join(path)))">!! ValueError: Bitmap "Music-pause.png" not readable in bitmapPath /home/slave/tmp/testautomation/TestCases/MRD8/Audio_113650/TestCases/MRD8/Audio_113650
+</a></div></td>
+             </tr>
+             </table></tr>

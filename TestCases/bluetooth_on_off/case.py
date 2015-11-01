@@ -1,0 +1,34 @@
+import fmbtandroid
+import time
+def exe_():
+	d = fmbtandroid.Device()
+	d.enableVisualLog("htmllog")
+	d.setBitmapPath("TestCases/MRD8/bluetooth_on_off")
+	d.shell("am start -n com.android.settings/.Settings")  
+	d.refreshScreenshot()
+	d.refreshView()
+	d.tapText("Bluetooth")
+	d.refreshScreenshot()
+	time.
+	if(d.waitBitmap("Bluetooth-off.png")):
+            d.tapBitmap("Bluetooth-off.png")
+            d.refreshScreenshot()
+	    try:
+                assert d.waitBitmap("Bluetooth-on.png"),"[Bluetooth]Fail:Bluetooth on/off" 
+	    except AssertionError:
+	        return "[Bluetooth]Fail:Bluetooth off"
+            else:
+		return "PASS" 
+
+	elif(d.waitBitmap("Bluetooth-on.png")):
+	    d.tapBitmap("Bluetooth-on.png")
+            d.refreshScreenshot()
+	    try:
+                assert d.waitBitmap("Bluetooth-off.png"),"[Bluetooth]Fail:Bluetooth on/off"  
+	    except AssertionError:
+		return "[Bluetooth]Fail:Bluetooth on"
+	    else:
+	        return "PASS" 
+
+result = exe_()
+print result

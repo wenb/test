@@ -1,0 +1,108 @@
+
+            <!DOCTYPE html><html>
+            <head><meta charset="utf-8"><title>fmbtandroid visual log</title>
+            <SCRIPT><!--
+            function showHide(eid){
+                if (document.getElementById(eid).style.display != 'inline'){
+                    document.getElementById(eid).style.display = 'inline';
+                } else {
+                    document.getElementById(eid).style.display = 'none';
+                }
+            }
+            // --></SCRIPT>
+            <style>
+                td { vertical-align: top }
+                ul { list-style-type: none }
+                .funccalls { display: none }
+            </style>
+            </head><body>
+            
+
+<ul><li><table><tr><td><div class="time" id="1404279384.634931"><a id="time1404279384.634931">1404279384.634931</a></div></td><td><div class="step"><a id="blockId0" href="javascript:showHide('S0')">1. exe_</a></div><div class="funccalls" id="S0"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404279384.635044"><a id="time1404279384.635044">1404279384.635044</a></div></td><td><a title="case.py:6"><div class="call">shell('am start -n com.android.settings/.Settings')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1404279385.217329"><a id="time1404279385.217329">1404279385.217329</a></div></td><td><div class="returnvalue"><a title="shell">== Starting: Intent { cmp=com.android.settings/.Settings }
+Warning: Activity not started, its current task has been brought to the front
+</a></div></td>
+             </tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404279385.218023"><a id="time1404279385.218023">1404279385.218023</a></div></td><td><a title="case.py:7"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1404279388.196334"><a id="time1404279388.196334">1404279388.196334</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/bluetooth_on_off/screenshots/20140702-133625-218159-Baytrail56CE528B.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1404279385.218023 refreshScreenshot() at case.py:7" src="screenshots/20140702-133625-218159-Baytrail56CE528B.png" width="240" alt="screenshots/20140702-133625-218159-Baytrail56CE528B.png" /></td></tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404279388.196927"><a id="time1404279388.196927">1404279388.196927</a></div></td><td><a title="case.py:8"><div class="call">refreshView()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1404279390.498221"><a id="time1404279390.498221">1404279390.498221</a></div></td><td><div class="returnvalue"><a title="refreshView">== View(items=138, dump="/home/slave/tmp/testautomation/TestCases/MRD8/bluetooth_on_off/screenshots/20140702-133630-448936-Baytrail56CE528B.view")</a></div></td>
+             </tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404279390.498494"><a id="time1404279390.498494">1404279390.498494</a></div></td><td><a title="case.py:9"><div class="call">tapText('Bluetooth')</div></a></td>
+             </tr>
+             
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404279390.498572"><a id="time1404279390.498572">1404279390.498572</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtandroid.py:814"><div class="call">tapItem(&lt;fmbtandroid.ViewItem object at 0x101c790&gt;)</div></a></td>
+             </tr>
+             
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404279390.498634"><a id="time1404279390.498634">1404279390.498634</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtgti.py:2016"><div class="call">tap((224, 373))</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1404279391.391818"><a id="time1404279391.391818">1404279391.391818</a></div></td><td><div class="returnvalue"><a title="tap">== True</a></div></td>
+             </tr><tr><td></td><td><img class="return:tap" title="1404279385.218023 refreshScreenshot() at case.py:7" src="screenshots/20140702-133625-218159-Baytrail56CE528B.png.00001.png" width="240" alt="screenshots/20140702-133625-218159-Baytrail56CE528B.png.00001.png" /></td></tr>
+             </table></tr>
+
+             <tr>
+                 <td><div class="time" id="1404279391.392025"><a id="time1404279391.392025">1404279391.392025</a></div></td><td><div class="returnvalue"><a title="tapItem">== True</a></div></td>
+             </tr>
+             </table></tr>
+
+             <tr>
+                 <td><div class="time" id="1404279391.392122"><a id="time1404279391.392122">1404279391.392122</a></div></td><td><div class="returnvalue"><a title="tapText">== True</a></div></td>
+             </tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404279391.392728"><a id="time1404279391.392728">1404279391.392728</a></div></td><td><a title="case.py:10"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1404279392.769522"><a id="time1404279392.769522">1404279392.769522</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/bluetooth_on_off/screenshots/20140702-133631-392850-Baytrail56CE528B.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1404279391.392728 refreshScreenshot() at case.py:10" src="screenshots/20140702-133631-392850-Baytrail56CE528B.png" width="240" alt="screenshots/20140702-133631-392850-Baytrail56CE528B.png" /></td></tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404279392.770129"><a id="time1404279392.770129">1404279392.770129</a></div></td><td><a title="case.py:11"><div class="call">waitBitmap('Bluetooth-off.png')</div></a></td>
+             </tr>
+             
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1404279392.770282"><a id="time1404279392.770282">1404279392.770282</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtgti.py:2217"><div class="call">waitAnyBitmap(['Bluetooth-off.png'])</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1404279392.770511"><a id="time1404279392.770511">1404279392.770511</a></div></td><td><div class="exception"><a title="File /usr/local/lib/python2.7/dist-packages/fmbtgti.py, line 1179, in abspath
+    raise ValueError('Bitmap %s not readable in bitmapPath %s' % (bitmap, ':'.join(path)))">!! ValueError: Bitmap "Bluetooth-off.png" not readable in bitmapPath /home/slave/tmp/testautomation/TestCases/MRD8/bluetooth_on_off/TestCases/MRD8/Bluetooth_on_off
+</a></div></td>
+             </tr>
+             </table></tr>
+
+             <tr>
+                 <td><div class="time" id="1404279392.770759"><a id="time1404279392.770759">1404279392.770759</a></div></td><td><div class="exception"><a title="File /usr/local/lib/python2.7/dist-packages/fmbtgti.py, line 1179, in abspath
+    raise ValueError('Bitmap %s not readable in bitmapPath %s' % (bitmap, ':'.join(path)))">!! ValueError: Bitmap "Bluetooth-off.png" not readable in bitmapPath /home/slave/tmp/testautomation/TestCases/MRD8/bluetooth_on_off/TestCases/MRD8/Bluetooth_on_off
+</a></div></td>
+             </tr>
+             </table></tr>

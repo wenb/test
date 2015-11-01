@@ -1,0 +1,709 @@
+
+            <!DOCTYPE html><html>
+            <head><meta charset="utf-8"><title>fmbtandroid visual log</title>
+            <SCRIPT><!--
+            function showHide(eid){
+                if (document.getElementById(eid).style.display != 'inline'){
+                    document.getElementById(eid).style.display = 'inline';
+                } else {
+                    document.getElementById(eid).style.display = 'none';
+                }
+            }
+            // --></SCRIPT>
+            <style>
+                td { vertical-align: top }
+                ul { list-style-type: none }
+                .funccalls { display: none }
+            </style>
+            </head><body>
+            
+
+<ul><li><table><tr><td><div class="time" id="1405911021.600325"><a id="time1405911021.600325">1405911021.600325</a></div></td><td><div class="step"><a id="blockId0" href="javascript:showHide('S0')">1. &lt;module&gt;</a></div><div class="funccalls" id="S0"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911021.600460"><a id="time1405911021.600460">1405911021.600460</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">shell('am start -n com.android.Camera/.CameraActivity')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911022.130873"><a id="time1405911022.130873">1405911022.130873</a></div></td><td><div class="returnvalue"><a title="shell">== Starting: Intent { cmp=com.android.Camera/.CameraActivity }
+Error type 3
+Error: Activity class {com.android.Camera/com.android.Camera.CameraActivity} does not exist.
+</a></div></td>
+             </tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911027.540041"><a id="time1405911027.540041">1405911027.540041</a></div></td><td><div class="step"><a id="blockId1" href="javascript:showHide('S1')">2. &lt;module&gt;</a></div><div class="funccalls" id="S1"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911027.540176"><a id="time1405911027.540176">1405911027.540176</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911028.580249"><a id="time1405911028.580249">1405911028.580249</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-105027-540297-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405911027.540176 refreshScreenshot() at <string>:1" src="screenshots/20140721-105027-540297-RHBED246400081.png" width="240" alt="screenshots/20140721-105027-540297-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911028.596854"><a id="time1405911028.596854">1405911028.596854</a></div></td><td><div class="step"><a id="blockId2" href="javascript:showHide('S2')">3. &lt;module&gt;</a></div><div class="funccalls" id="S2"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911028.596911"><a id="time1405911028.596911">1405911028.596911</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-105027-540297-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911028.609259"><a id="time1405911028.609259">1405911028.609259</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-105027-540297-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405911028.596911 refreshScreenshot() at <string>:1" src="screenshots/20140721-105027-540297-RHBED246400081.png" width="240" alt="screenshots/20140721-105027-540297-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911264.984063"><a id="time1405911264.984063">1405911264.984063</a></div></td><td><div class="step"><a id="blockId3" href="javascript:showHide('S3')">4. &lt;module&gt;</a></div><div class="funccalls" id="S3"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911264.984200"><a id="time1405911264.984200">1405911264.984200</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911266.450530"><a id="time1405911266.450530">1405911266.450530</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-105424-984313-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405911264.984200 refreshScreenshot() at <string>:1" src="screenshots/20140721-105424-984313-RHBED246400081.png" width="240" alt="screenshots/20140721-105424-984313-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911266.473223"><a id="time1405911266.473223">1405911266.473223</a></div></td><td><div class="step"><a id="blockId4" href="javascript:showHide('S4')">5. &lt;module&gt;</a></div><div class="funccalls" id="S4"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911266.473284"><a id="time1405911266.473284">1405911266.473284</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-105424-984313-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911266.485432"><a id="time1405911266.485432">1405911266.485432</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-105424-984313-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405911266.473284 refreshScreenshot() at <string>:1" src="screenshots/20140721-105424-984313-RHBED246400081.png" width="240" alt="screenshots/20140721-105424-984313-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911266.507955"><a id="time1405911266.507955">1405911266.507955</a></div></td><td><div class="step"><a id="blockId5" href="javascript:showHide('S5')">6. &lt;module&gt;</a></div><div class="funccalls" id="S5"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911266.508007"><a id="time1405911266.508007">1405911266.508007</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-105424-984313-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911266.518835"><a id="time1405911266.518835">1405911266.518835</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-105424-984313-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405911266.508007 refreshScreenshot() at <string>:1" src="screenshots/20140721-105424-984313-RHBED246400081.png" width="240" alt="screenshots/20140721-105424-984313-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911282.319367"><a id="time1405911282.319367">1405911282.319367</a></div></td><td><div class="step"><a id="blockId6" href="javascript:showHide('S6')">7. &lt;module&gt;</a></div><div class="funccalls" id="S6"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911282.319503"><a id="time1405911282.319503">1405911282.319503</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">drag((0.72, 0.1), (0.92, 0.93))</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911282.992130"><a id="time1405911282.992130">1405911282.992130</a></div></td><td><div class="returnvalue"><a title="drag">== True</a></div></td>
+             </tr><tr><td></td><td><img class="return:drag" title="" src="screenshots/20140721-105424-984313-RHBED246400081.png.00001.png" width="240" alt="screenshots/20140721-105424-984313-RHBED246400081.png.00001.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911294.167262"><a id="time1405911294.167262">1405911294.167262</a></div></td><td><div class="step"><a id="blockId7" href="javascript:showHide('S7')">8. &lt;module&gt;</a></div><div class="funccalls" id="S7"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911294.167434"><a id="time1405911294.167434">1405911294.167434</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">tap((0.89, 0.93))</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911294.374103"><a id="time1405911294.374103">1405911294.374103</a></div></td><td><div class="returnvalue"><a title="tap">== True</a></div></td>
+             </tr><tr><td></td><td><img class="return:tap" title="1405911266.508007 refreshScreenshot() at <string>:1" src="screenshots/20140721-105424-984313-RHBED246400081.png.00002.png" width="240" alt="screenshots/20140721-105424-984313-RHBED246400081.png.00002.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911298.431196"><a id="time1405911298.431196">1405911298.431196</a></div></td><td><div class="step"><a id="blockId8" href="javascript:showHide('S8')">9. &lt;module&gt;</a></div><div class="funccalls" id="S8"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911298.431351"><a id="time1405911298.431351">1405911298.431351</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">tap((0.86, 0.93))</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911298.634535"><a id="time1405911298.634535">1405911298.634535</a></div></td><td><div class="returnvalue"><a title="tap">== True</a></div></td>
+             </tr><tr><td></td><td><img class="return:tap" title="1405911266.508007 refreshScreenshot() at <string>:1" src="screenshots/20140721-105424-984313-RHBED246400081.png.00003.png" width="240" alt="screenshots/20140721-105424-984313-RHBED246400081.png.00003.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911302.665096"><a id="time1405911302.665096">1405911302.665096</a></div></td><td><div class="step"><a id="blockId9" href="javascript:showHide('S9')">10. &lt;module&gt;</a></div><div class="funccalls" id="S9"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911302.665218"><a id="time1405911302.665218">1405911302.665218</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911305.244367"><a id="time1405911305.244367">1405911305.244367</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-105502-665355-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405911302.665218 refreshScreenshot() at <string>:1" src="screenshots/20140721-105502-665355-RHBED246400081.png" width="240" alt="screenshots/20140721-105502-665355-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911305.274377"><a id="time1405911305.274377">1405911305.274377</a></div></td><td><div class="step"><a id="blockId10" href="javascript:showHide('S10')">11. &lt;module&gt;</a></div><div class="funccalls" id="S10"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911305.274436"><a id="time1405911305.274436">1405911305.274436</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-105502-665355-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911305.286549"><a id="time1405911305.286549">1405911305.286549</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-105502-665355-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405911305.274436 refreshScreenshot() at <string>:1" src="screenshots/20140721-105502-665355-RHBED246400081.png" width="240" alt="screenshots/20140721-105502-665355-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911305.315651"><a id="time1405911305.315651">1405911305.315651</a></div></td><td><div class="step"><a id="blockId11" href="javascript:showHide('S11')">12. &lt;module&gt;</a></div><div class="funccalls" id="S11"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911305.315703"><a id="time1405911305.315703">1405911305.315703</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-105502-665355-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911305.326726"><a id="time1405911305.326726">1405911305.326726</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-105502-665355-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405911305.315703 refreshScreenshot() at <string>:1" src="screenshots/20140721-105502-665355-RHBED246400081.png" width="240" alt="screenshots/20140721-105502-665355-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911308.463161"><a id="time1405911308.463161">1405911308.463161</a></div></td><td><div class="step"><a id="blockId12" href="javascript:showHide('S12')">13. &lt;module&gt;</a></div><div class="funccalls" id="S12"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911308.463330"><a id="time1405911308.463330">1405911308.463330</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">tap((0.52, 0.31))</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911308.807970"><a id="time1405911308.807970">1405911308.807970</a></div></td><td><div class="returnvalue"><a title="tap">== True</a></div></td>
+             </tr><tr><td></td><td><img class="return:tap" title="1405911305.315703 refreshScreenshot() at <string>:1" src="screenshots/20140721-105502-665355-RHBED246400081.png.00001.png" width="240" alt="screenshots/20140721-105502-665355-RHBED246400081.png.00001.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911379.174754"><a id="time1405911379.174754">1405911379.174754</a></div></td><td><div class="step"><a id="blockId13" href="javascript:showHide('S13')">14. &lt;module&gt;</a></div><div class="funccalls" id="S13"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911379.174892"><a id="time1405911379.174892">1405911379.174892</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">tap((0.51, 0.93))</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911379.527838"><a id="time1405911379.527838">1405911379.527838</a></div></td><td><div class="returnvalue"><a title="tap">== True</a></div></td>
+             </tr><tr><td></td><td><img class="return:tap" title="1405911305.315703 refreshScreenshot() at <string>:1" src="screenshots/20140721-105502-665355-RHBED246400081.png.00002.png" width="240" alt="screenshots/20140721-105502-665355-RHBED246400081.png.00002.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911564.543119"><a id="time1405911564.543119">1405911564.543119</a></div></td><td><div class="step"><a id="blockId14" href="javascript:showHide('S14')">15. &lt;module&gt;</a></div><div class="funccalls" id="S14"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911564.543246"><a id="time1405911564.543246">1405911564.543246</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911566.574124"><a id="time1405911566.574124">1405911566.574124</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-105924-543369-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405911564.543246 refreshScreenshot() at <string>:1" src="screenshots/20140721-105924-543369-RHBED246400081.png" width="240" alt="screenshots/20140721-105924-543369-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911566.602320"><a id="time1405911566.602320">1405911566.602320</a></div></td><td><div class="step"><a id="blockId15" href="javascript:showHide('S15')">16. &lt;module&gt;</a></div><div class="funccalls" id="S15"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911566.602389"><a id="time1405911566.602389">1405911566.602389</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-105924-543369-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911566.614333"><a id="time1405911566.614333">1405911566.614333</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-105924-543369-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405911566.602389 refreshScreenshot() at <string>:1" src="screenshots/20140721-105924-543369-RHBED246400081.png" width="240" alt="screenshots/20140721-105924-543369-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911566.642186"><a id="time1405911566.642186">1405911566.642186</a></div></td><td><div class="step"><a id="blockId16" href="javascript:showHide('S16')">17. &lt;module&gt;</a></div><div class="funccalls" id="S16"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911566.642249"><a id="time1405911566.642249">1405911566.642249</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-105924-543369-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911566.653001"><a id="time1405911566.653001">1405911566.653001</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-105924-543369-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405911566.642249 refreshScreenshot() at <string>:1" src="screenshots/20140721-105924-543369-RHBED246400081.png" width="240" alt="screenshots/20140721-105924-543369-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911573.397476"><a id="time1405911573.397476">1405911573.397476</a></div></td><td><div class="step"><a id="blockId17" href="javascript:showHide('S17')">18. &lt;module&gt;</a></div><div class="funccalls" id="S17"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911573.397613"><a id="time1405911573.397613">1405911573.397613</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">tap((0.19, 0.22), hold=1.4)</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911575.148680"><a id="time1405911575.148680">1405911575.148680</a></div></td><td><div class="returnvalue"><a title="tap">== True</a></div></td>
+             </tr><tr><td></td><td><img class="return:tap" title="1405911566.642249 refreshScreenshot() at <string>:1" src="screenshots/20140721-105924-543369-RHBED246400081.png.00001.png" width="240" alt="screenshots/20140721-105924-543369-RHBED246400081.png.00001.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911624.733930"><a id="time1405911624.733930">1405911624.733930</a></div></td><td><div class="step"><a id="blockId18" href="javascript:showHide('S18')">19. &lt;module&gt;</a></div><div class="funccalls" id="S18"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911624.734071"><a id="time1405911624.734071">1405911624.734071</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911626.781316"><a id="time1405911626.781316">1405911626.781316</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-110024-734189-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405911624.734071 refreshScreenshot() at <string>:1" src="screenshots/20140721-110024-734189-RHBED246400081.png" width="240" alt="screenshots/20140721-110024-734189-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911626.809622"><a id="time1405911626.809622">1405911626.809622</a></div></td><td><div class="step"><a id="blockId19" href="javascript:showHide('S19')">20. &lt;module&gt;</a></div><div class="funccalls" id="S19"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911626.809690"><a id="time1405911626.809690">1405911626.809690</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-110024-734189-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911626.821960"><a id="time1405911626.821960">1405911626.821960</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-110024-734189-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405911626.809690 refreshScreenshot() at <string>:1" src="screenshots/20140721-110024-734189-RHBED246400081.png" width="240" alt="screenshots/20140721-110024-734189-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911626.849638"><a id="time1405911626.849638">1405911626.849638</a></div></td><td><div class="step"><a id="blockId20" href="javascript:showHide('S20')">21. &lt;module&gt;</a></div><div class="funccalls" id="S20"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911626.849690"><a id="time1405911626.849690">1405911626.849690</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-110024-734189-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911626.860576"><a id="time1405911626.860576">1405911626.860576</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-110024-734189-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405911626.849690 refreshScreenshot() at <string>:1" src="screenshots/20140721-110024-734189-RHBED246400081.png" width="240" alt="screenshots/20140721-110024-734189-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911786.958504"><a id="time1405911786.958504">1405911786.958504</a></div></td><td><div class="step"><a id="blockId21" href="javascript:showHide('S21')">22. &lt;module&gt;</a></div><div class="funccalls" id="S21"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911786.958643"><a id="time1405911786.958643">1405911786.958643</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911788.999543"><a id="time1405911788.999543">1405911788.999543</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-110306-958756-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405911786.958643 refreshScreenshot() at <string>:1" src="screenshots/20140721-110306-958756-RHBED246400081.png" width="240" alt="screenshots/20140721-110306-958756-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911789.027927"><a id="time1405911789.027927">1405911789.027927</a></div></td><td><div class="step"><a id="blockId22" href="javascript:showHide('S22')">23. &lt;module&gt;</a></div><div class="funccalls" id="S22"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911789.027999"><a id="time1405911789.027999">1405911789.027999</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-110306-958756-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911789.039884"><a id="time1405911789.039884">1405911789.039884</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-110306-958756-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405911789.027999 refreshScreenshot() at <string>:1" src="screenshots/20140721-110306-958756-RHBED246400081.png" width="240" alt="screenshots/20140721-110306-958756-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911789.067830"><a id="time1405911789.067830">1405911789.067830</a></div></td><td><div class="step"><a id="blockId23" href="javascript:showHide('S23')">24. &lt;module&gt;</a></div><div class="funccalls" id="S23"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911789.067883"><a id="time1405911789.067883">1405911789.067883</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-110306-958756-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911789.078698"><a id="time1405911789.078698">1405911789.078698</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-110306-958756-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405911789.067883 refreshScreenshot() at <string>:1" src="screenshots/20140721-110306-958756-RHBED246400081.png" width="240" alt="screenshots/20140721-110306-958756-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911792.156234"><a id="time1405911792.156234">1405911792.156234</a></div></td><td><div class="step"><a id="blockId24" href="javascript:showHide('S24')">25. &lt;module&gt;</a></div><div class="funccalls" id="S24"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911792.156367"><a id="time1405911792.156367">1405911792.156367</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">tap((0.93, 0.07))</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911792.519262"><a id="time1405911792.519262">1405911792.519262</a></div></td><td><div class="returnvalue"><a title="tap">== True</a></div></td>
+             </tr><tr><td></td><td><img class="return:tap" title="1405911789.067883 refreshScreenshot() at <string>:1" src="screenshots/20140721-110306-958756-RHBED246400081.png.00001.png" width="240" alt="screenshots/20140721-110306-958756-RHBED246400081.png.00001.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911797.550102"><a id="time1405911797.550102">1405911797.550102</a></div></td><td><div class="step"><a id="blockId25" href="javascript:showHide('S25')">26. &lt;module&gt;</a></div><div class="funccalls" id="S25"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911797.550489"><a id="time1405911797.550489">1405911797.550489</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911799.105558"><a id="time1405911799.105558">1405911799.105558</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-110317-550654-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405911797.550489 refreshScreenshot() at <string>:1" src="screenshots/20140721-110317-550654-RHBED246400081.png" width="240" alt="screenshots/20140721-110317-550654-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911799.131183"><a id="time1405911799.131183">1405911799.131183</a></div></td><td><div class="step"><a id="blockId26" href="javascript:showHide('S26')">27. &lt;module&gt;</a></div><div class="funccalls" id="S26"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911799.131253"><a id="time1405911799.131253">1405911799.131253</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-110317-550654-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911799.143389"><a id="time1405911799.143389">1405911799.143389</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-110317-550654-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405911799.131253 refreshScreenshot() at <string>:1" src="screenshots/20140721-110317-550654-RHBED246400081.png" width="240" alt="screenshots/20140721-110317-550654-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911799.168452"><a id="time1405911799.168452">1405911799.168452</a></div></td><td><div class="step"><a id="blockId27" href="javascript:showHide('S27')">28. &lt;module&gt;</a></div><div class="funccalls" id="S27"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911799.168503"><a id="time1405911799.168503">1405911799.168503</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-110317-550654-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911799.179375"><a id="time1405911799.179375">1405911799.179375</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-110317-550654-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405911799.168503 refreshScreenshot() at <string>:1" src="screenshots/20140721-110317-550654-RHBED246400081.png" width="240" alt="screenshots/20140721-110317-550654-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911802.860372"><a id="time1405911802.860372">1405911802.860372</a></div></td><td><div class="step"><a id="blockId28" href="javascript:showHide('S28')">29. &lt;module&gt;</a></div><div class="funccalls" id="S28"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911802.860779"><a id="time1405911802.860779">1405911802.860779</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">tap((0.71, 0.46))</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911803.115226"><a id="time1405911803.115226">1405911803.115226</a></div></td><td><div class="returnvalue"><a title="tap">== True</a></div></td>
+             </tr><tr><td></td><td><img class="return:tap" title="1405911799.168503 refreshScreenshot() at <string>:1" src="screenshots/20140721-110317-550654-RHBED246400081.png.00001.png" width="240" alt="screenshots/20140721-110317-550654-RHBED246400081.png.00001.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911810.437945"><a id="time1405911810.437945">1405911810.437945</a></div></td><td><div class="step"><a id="blockId29" href="javascript:showHide('S29')">30. &lt;module&gt;</a></div><div class="funccalls" id="S29"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911810.438080"><a id="time1405911810.438080">1405911810.438080</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911811.643262"><a id="time1405911811.643262">1405911811.643262</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-110330-438198-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405911810.438080 refreshScreenshot() at <string>:1" src="screenshots/20140721-110330-438198-RHBED246400081.png" width="240" alt="screenshots/20140721-110330-438198-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911811.665671"><a id="time1405911811.665671">1405911811.665671</a></div></td><td><div class="step"><a id="blockId30" href="javascript:showHide('S30')">31. &lt;module&gt;</a></div><div class="funccalls" id="S30"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911811.665739"><a id="time1405911811.665739">1405911811.665739</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-110330-438198-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911811.677836"><a id="time1405911811.677836">1405911811.677836</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-110330-438198-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405911811.665739 refreshScreenshot() at <string>:1" src="screenshots/20140721-110330-438198-RHBED246400081.png" width="240" alt="screenshots/20140721-110330-438198-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911811.700301"><a id="time1405911811.700301">1405911811.700301</a></div></td><td><div class="step"><a id="blockId31" href="javascript:showHide('S31')">32. &lt;module&gt;</a></div><div class="funccalls" id="S31"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911811.700355"><a id="time1405911811.700355">1405911811.700355</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-110330-438198-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911811.711865"><a id="time1405911811.711865">1405911811.711865</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-110330-438198-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405911811.700355 refreshScreenshot() at <string>:1" src="screenshots/20140721-110330-438198-RHBED246400081.png" width="240" alt="screenshots/20140721-110330-438198-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911812.796182"><a id="time1405911812.796182">1405911812.796182</a></div></td><td><div class="step"><a id="blockId32" href="javascript:showHide('S32')">33. &lt;module&gt;</a></div><div class="funccalls" id="S32"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911812.796315"><a id="time1405911812.796315">1405911812.796315</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">tap((0.69, 0.46))</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911812.988351"><a id="time1405911812.988351">1405911812.988351</a></div></td><td><div class="returnvalue"><a title="tap">== True</a></div></td>
+             </tr><tr><td></td><td><img class="return:tap" title="1405911811.700355 refreshScreenshot() at <string>:1" src="screenshots/20140721-110330-438198-RHBED246400081.png.00001.png" width="240" alt="screenshots/20140721-110330-438198-RHBED246400081.png.00001.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911843.853884"><a id="time1405911843.853884">1405911843.853884</a></div></td><td><div class="step"><a id="blockId33" href="javascript:showHide('S33')">34. &lt;module&gt;</a></div><div class="funccalls" id="S33"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911843.854019"><a id="time1405911843.854019">1405911843.854019</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911847.005252"><a id="time1405911847.005252">1405911847.005252</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-110403-854138-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405911843.854019 refreshScreenshot() at <string>:1" src="screenshots/20140721-110403-854138-RHBED246400081.png" width="240" alt="screenshots/20140721-110403-854138-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911847.036337"><a id="time1405911847.036337">1405911847.036337</a></div></td><td><div class="step"><a id="blockId34" href="javascript:showHide('S34')">35. &lt;module&gt;</a></div><div class="funccalls" id="S34"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911847.036393"><a id="time1405911847.036393">1405911847.036393</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-110403-854138-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911847.048565"><a id="time1405911847.048565">1405911847.048565</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-110403-854138-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405911847.036393 refreshScreenshot() at <string>:1" src="screenshots/20140721-110403-854138-RHBED246400081.png" width="240" alt="screenshots/20140721-110403-854138-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911847.079763"><a id="time1405911847.079763">1405911847.079763</a></div></td><td><div class="step"><a id="blockId35" href="javascript:showHide('S35')">36. &lt;module&gt;</a></div><div class="funccalls" id="S35"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911847.079826"><a id="time1405911847.079826">1405911847.079826</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-110403-854138-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911847.090631"><a id="time1405911847.090631">1405911847.090631</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-110403-854138-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405911847.079826 refreshScreenshot() at <string>:1" src="screenshots/20140721-110403-854138-RHBED246400081.png" width="240" alt="screenshots/20140721-110403-854138-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911848.420154"><a id="time1405911848.420154">1405911848.420154</a></div></td><td><div class="step"><a id="blockId36" href="javascript:showHide('S36')">37. &lt;module&gt;</a></div><div class="funccalls" id="S36"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911848.420286"><a id="time1405911848.420286">1405911848.420286</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">tap((0.92, 0.09))</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911848.951929"><a id="time1405911848.951929">1405911848.951929</a></div></td><td><div class="returnvalue"><a title="tap">== True</a></div></td>
+             </tr><tr><td></td><td><img class="return:tap" title="1405911847.079826 refreshScreenshot() at <string>:1" src="screenshots/20140721-110403-854138-RHBED246400081.png.00001.png" width="240" alt="screenshots/20140721-110403-854138-RHBED246400081.png.00001.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911956.001813"><a id="time1405911956.001813">1405911956.001813</a></div></td><td><div class="step"><a id="blockId37" href="javascript:showHide('S37')">38. &lt;module&gt;</a></div><div class="funccalls" id="S37"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911956.001887"><a id="time1405911956.001887">1405911956.001887</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">shell('am start -n com.android.gallery3d/.app.Gallery')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911956.707226"><a id="time1405911956.707226">1405911956.707226</a></div></td><td><div class="returnvalue"><a title="shell">== Starting: Intent { cmp=com.android.gallery3d/.app.Gallery }
+</a></div></td>
+             </tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911969.741706"><a id="time1405911969.741706">1405911969.741706</a></div></td><td><div class="step"><a id="blockId38" href="javascript:showHide('S38')">39. &lt;module&gt;</a></div><div class="funccalls" id="S38"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911969.741842"><a id="time1405911969.741842">1405911969.741842</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911971.117944"><a id="time1405911971.117944">1405911971.117944</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-110609-741962-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405911969.741842 refreshScreenshot() at <string>:1" src="screenshots/20140721-110609-741962-RHBED246400081.png" width="240" alt="screenshots/20140721-110609-741962-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911971.140426"><a id="time1405911971.140426">1405911971.140426</a></div></td><td><div class="step"><a id="blockId39" href="javascript:showHide('S39')">40. &lt;module&gt;</a></div><div class="funccalls" id="S39"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911971.140496"><a id="time1405911971.140496">1405911971.140496</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-110609-741962-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911971.152476"><a id="time1405911971.152476">1405911971.152476</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-110609-741962-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405911971.140496 refreshScreenshot() at <string>:1" src="screenshots/20140721-110609-741962-RHBED246400081.png" width="240" alt="screenshots/20140721-110609-741962-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911971.174595"><a id="time1405911971.174595">1405911971.174595</a></div></td><td><div class="step"><a id="blockId40" href="javascript:showHide('S40')">41. &lt;module&gt;</a></div><div class="funccalls" id="S40"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911971.174647"><a id="time1405911971.174647">1405911971.174647</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-110609-741962-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911971.185615"><a id="time1405911971.185615">1405911971.185615</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-110609-741962-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405911971.174647 refreshScreenshot() at <string>:1" src="screenshots/20140721-110609-741962-RHBED246400081.png" width="240" alt="screenshots/20140721-110609-741962-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911973.467422"><a id="time1405911973.467422">1405911973.467422</a></div></td><td><div class="step"><a id="blockId41" href="javascript:showHide('S41')">42. &lt;module&gt;</a></div><div class="funccalls" id="S41"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911973.467553"><a id="time1405911973.467553">1405911973.467553</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">tap((0.26, 0.24))</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911973.675632"><a id="time1405911973.675632">1405911973.675632</a></div></td><td><div class="returnvalue"><a title="tap">== True</a></div></td>
+             </tr><tr><td></td><td><img class="return:tap" title="1405911971.174647 refreshScreenshot() at <string>:1" src="screenshots/20140721-110609-741962-RHBED246400081.png.00001.png" width="240" alt="screenshots/20140721-110609-741962-RHBED246400081.png.00001.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405911990.939265"><a id="time1405911990.939265">1405911990.939265</a></div></td><td><div class="step"><a id="blockId42" href="javascript:showHide('S42')">43. &lt;module&gt;</a></div><div class="funccalls" id="S42"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405911990.939429"><a id="time1405911990.939429">1405911990.939429</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">tap((0.0, 0.44))</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405911991.147356"><a id="time1405911991.147356">1405911991.147356</a></div></td><td><div class="returnvalue"><a title="tap">== True</a></div></td>
+             </tr><tr><td></td><td><img class="return:tap" title="1405911971.174647 refreshScreenshot() at <string>:1" src="screenshots/20140721-110609-741962-RHBED246400081.png.00002.png" width="240" alt="screenshots/20140721-110609-741962-RHBED246400081.png.00002.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405912165.505992"><a id="time1405912165.505992">1405912165.505992</a></div></td><td><div class="step"><a id="blockId43" href="javascript:showHide('S43')">44. &lt;module&gt;</a></div><div class="funccalls" id="S43"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405912165.506131"><a id="time1405912165.506131">1405912165.506131</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405912167.468982"><a id="time1405912167.468982">1405912167.468982</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-110925-506253-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405912165.506131 refreshScreenshot() at <string>:1" src="screenshots/20140721-110925-506253-RHBED246400081.png" width="240" alt="screenshots/20140721-110925-506253-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405912167.492134"><a id="time1405912167.492134">1405912167.492134</a></div></td><td><div class="step"><a id="blockId44" href="javascript:showHide('S44')">45. &lt;module&gt;</a></div><div class="funccalls" id="S44"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405912167.492193"><a id="time1405912167.492193">1405912167.492193</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-110925-506253-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405912167.504345"><a id="time1405912167.504345">1405912167.504345</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-110925-506253-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405912167.492193 refreshScreenshot() at <string>:1" src="screenshots/20140721-110925-506253-RHBED246400081.png" width="240" alt="screenshots/20140721-110925-506253-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405912167.527679"><a id="time1405912167.527679">1405912167.527679</a></div></td><td><div class="step"><a id="blockId45" href="javascript:showHide('S45')">46. &lt;module&gt;</a></div><div class="funccalls" id="S45"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405912167.527743"><a id="time1405912167.527743">1405912167.527743</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-110925-506253-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405912167.538548"><a id="time1405912167.538548">1405912167.538548</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-110925-506253-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405912167.527743 refreshScreenshot() at <string>:1" src="screenshots/20140721-110925-506253-RHBED246400081.png" width="240" alt="screenshots/20140721-110925-506253-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405912214.891353"><a id="time1405912214.891353">1405912214.891353</a></div></td><td><div class="step"><a id="blockId46" href="javascript:showHide('S46')">47. &lt;module&gt;</a></div><div class="funccalls" id="S46"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405912214.891490"><a id="time1405912214.891490">1405912214.891490</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">pressHome()</div></a></td>
+             </tr>
+             
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405912214.891624"><a id="time1405912214.891624">1405912214.891624</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtandroid.py:522"><div class="call">pressKey('KEYCODE_HOME')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405912214.904595"><a id="time1405912214.904595">1405912214.904595</a></div></td><td><div class="returnvalue"><a title="pressKey">== True</a></div></td>
+             </tr>
+             </table></tr>
+
+             <tr>
+                 <td><div class="time" id="1405912214.904717"><a id="time1405912214.904717">1405912214.904717</a></div></td><td><div class="returnvalue"><a title="pressHome">== True</a></div></td>
+             </tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405912218.418765"><a id="time1405912218.418765">1405912218.418765</a></div></td><td><div class="step"><a id="blockId47" href="javascript:showHide('S47')">48. &lt;module&gt;</a></div><div class="funccalls" id="S47"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405912218.419353"><a id="time1405912218.419353">1405912218.419353</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405912221.110479"><a id="time1405912221.110479">1405912221.110479</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-111018-419509-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405912218.419353 refreshScreenshot() at <string>:1" src="screenshots/20140721-111018-419509-RHBED246400081.png" width="240" alt="screenshots/20140721-111018-419509-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405912221.141130"><a id="time1405912221.141130">1405912221.141130</a></div></td><td><div class="step"><a id="blockId48" href="javascript:showHide('S48')">49. &lt;module&gt;</a></div><div class="funccalls" id="S48"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405912221.141184"><a id="time1405912221.141184">1405912221.141184</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-111018-419509-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405912221.153361"><a id="time1405912221.153361">1405912221.153361</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-111018-419509-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405912221.141184 refreshScreenshot() at <string>:1" src="screenshots/20140721-111018-419509-RHBED246400081.png" width="240" alt="screenshots/20140721-111018-419509-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405912221.184069"><a id="time1405912221.184069">1405912221.184069</a></div></td><td><div class="step"><a id="blockId49" href="javascript:showHide('S49')">50. &lt;module&gt;</a></div><div class="funccalls" id="S49"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405912221.184122"><a id="time1405912221.184122">1405912221.184122</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-111018-419509-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405912221.194928"><a id="time1405912221.194928">1405912221.194928</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-111018-419509-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405912221.184122 refreshScreenshot() at <string>:1" src="screenshots/20140721-111018-419509-RHBED246400081.png" width="240" alt="screenshots/20140721-111018-419509-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405912223.545072"><a id="time1405912223.545072">1405912223.545072</a></div></td><td><div class="step"><a id="blockId50" href="javascript:showHide('S50')">51. &lt;module&gt;</a></div><div class="funccalls" id="S50"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405912223.545210"><a id="time1405912223.545210">1405912223.545210</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">swipe((0.85, 0.72), 'west', distance=1.0)</div></a></td>
+             </tr>
+             
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405912223.545453"><a id="time1405912223.545453">1405912223.545453</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtgti.py:1799"><div class="call">drag((612, 922), (0, 921))</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405912224.297074"><a id="time1405912224.297074">1405912224.297074</a></div></td><td><div class="returnvalue"><a title="drag">== True</a></div></td>
+             </tr><tr><td></td><td><img class="return:drag" title="" src="screenshots/20140721-111018-419509-RHBED246400081.png.00001.png" width="240" alt="screenshots/20140721-111018-419509-RHBED246400081.png.00001.png" /></td></tr>
+             </table></tr>
+
+             <tr>
+                 <td><div class="time" id="1405912224.297276"><a id="time1405912224.297276">1405912224.297276</a></div></td><td><div class="returnvalue"><a title="swipe">== True</a></div></td>
+             </tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405912231.729029"><a id="time1405912231.729029">1405912231.729029</a></div></td><td><div class="step"><a id="blockId51" href="javascript:showHide('S51')">52. &lt;module&gt;</a></div><div class="funccalls" id="S51"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405912231.729166"><a id="time1405912231.729166">1405912231.729166</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">swipe((0.84, 0.38), 'west', distance=0.69)</div></a></td>
+             </tr>
+             
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405912231.729378"><a id="time1405912231.729378">1405912231.729378</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtgti.py:1799"><div class="call">drag((605, 486), (187, 485))</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405912232.478917"><a id="time1405912232.478917">1405912232.478917</a></div></td><td><div class="returnvalue"><a title="drag">== True</a></div></td>
+             </tr><tr><td></td><td><img class="return:drag" title="" src="screenshots/20140721-111018-419509-RHBED246400081.png.00002.png" width="240" alt="screenshots/20140721-111018-419509-RHBED246400081.png.00002.png" /></td></tr>
+             </table></tr>
+
+             <tr>
+                 <td><div class="time" id="1405912232.479118"><a id="time1405912232.479118">1405912232.479118</a></div></td><td><div class="returnvalue"><a title="swipe">== True</a></div></td>
+             </tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405912501.879653"><a id="time1405912501.879653">1405912501.879653</a></div></td><td><div class="step"><a id="blockId52" href="javascript:showHide('S52')">53. &lt;module&gt;</a></div><div class="funccalls" id="S52"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405912501.879789"><a id="time1405912501.879789">1405912501.879789</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405912503.829951"><a id="time1405912503.829951">1405912503.829951</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-111501-879908-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405912501.879789 refreshScreenshot() at <string>:1" src="screenshots/20140721-111501-879908-RHBED246400081.png" width="240" alt="screenshots/20140721-111501-879908-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405912503.853499"><a id="time1405912503.853499">1405912503.853499</a></div></td><td><div class="step"><a id="blockId53" href="javascript:showHide('S53')">54. &lt;module&gt;</a></div><div class="funccalls" id="S53"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405912503.853558"><a id="time1405912503.853558">1405912503.853558</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-111501-879908-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405912503.865782"><a id="time1405912503.865782">1405912503.865782</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-111501-879908-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405912503.853558 refreshScreenshot() at <string>:1" src="screenshots/20140721-111501-879908-RHBED246400081.png" width="240" alt="screenshots/20140721-111501-879908-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405912503.890509"><a id="time1405912503.890509">1405912503.890509</a></div></td><td><div class="step"><a id="blockId54" href="javascript:showHide('S54')">55. &lt;module&gt;</a></div><div class="funccalls" id="S54"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405912503.890562"><a id="time1405912503.890562">1405912503.890562</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-111501-879908-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405912503.901593"><a id="time1405912503.901593">1405912503.901593</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/Graphic_113698/screenshots/20140721-111501-879908-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405912503.890562 refreshScreenshot() at <string>:1" src="screenshots/20140721-111501-879908-RHBED246400081.png" width="240" alt="screenshots/20140721-111501-879908-RHBED246400081.png" /></td></tr>
+             </table></tr>

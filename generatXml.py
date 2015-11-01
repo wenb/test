@@ -45,8 +45,7 @@ def GenerateXml(caseDir,fileName):
 #  employee = dom.createElement('employee')
  # root.appendChild(employee)
   folders = os.listdir(caseDir)
-  for i in folders:
-  
+  for i in folders:  
       case = dom.createElement('case')
       casename = dom.createTextNode(i)
       case.appendChild(casename)

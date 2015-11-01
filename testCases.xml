@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TestCases>
+  <case>wifi_on_off</case>
+  <case>disable_stayAwake</case>
+  <case>homeLauncher</case>
+  <case>bt_on_off</case>
+</TestCases>

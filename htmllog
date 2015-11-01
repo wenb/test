@@ -1,0 +1,212 @@
+
+            <!DOCTYPE html><html>
+            <head><meta charset="utf-8"><title>fmbtandroid visual log</title>
+            <SCRIPT><!--
+            function showHide(eid){
+                if (document.getElementById(eid).style.display != 'inline'){
+                    document.getElementById(eid).style.display = 'inline';
+                } else {
+                    document.getElementById(eid).style.display = 'none';
+                }
+            }
+            // --></SCRIPT>
+            <style>
+                td { vertical-align: top }
+                ul { list-style-type: none }
+                .funccalls { display: none }
+            </style>
+            </head><body>
+            
+
+<ul><li><table><tr><td><div class="time" id="1405649224.302426"><a id="time1405649224.302426">1405649224.302426</a></div></td><td><div class="step"><a id="blockId0" href="javascript:showHide('S0')">1. exe_</a></div><div class="funccalls" id="S0"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405649224.302535"><a id="time1405649224.302535">1405649224.302535</a></div></td><td><a title="TestCases/MRD8/Flashing_114110/case+bug.py:10"><div class="call">shell('am start -n com.android.settings/.DateTimeSettingsSetupWizard')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405649224.835414"><a id="time1405649224.835414">1405649224.835414</a></div></td><td><div class="returnvalue"><a title="shell">== Starting: Intent { cmp=com.android.settings/.DateTimeSettingsSetupWizard }
+</a></div></td>
+             </tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405649224.836118"><a id="time1405649224.836118">1405649224.836118</a></div></td><td><a title="TestCases/MRD8/Flashing_114110/case+bug.py:11"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405649225.934400"><a id="time1405649225.934400">1405649225.934400</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/screenshots/20140718-100704-836252-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405649224.836118 refreshScreenshot() at TestCases/MRD8/Flashing_114110/case+bug.py:11" src="screenshots/20140718-100704-836252-RHBED246400081.png" width="240" alt="screenshots/20140718-100704-836252-RHBED246400081.png" /></td></tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405649225.934983"><a id="time1405649225.934983">1405649225.934983</a></div></td><td><a title="TestCases/MRD8/Flashing_114110/case+bug.py:12"><div class="call">refreshView()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405649229.439975"><a id="time1405649229.439975">1405649229.439975</a></div></td><td><div class="returnvalue"><a title="refreshView">== View(items=69, dump="/home/slave/tmp/testautomation/screenshots/20140718-100709-409042-RHBED246400081.view")</a></div></td>
+             </tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405649229.440237"><a id="time1405649229.440237">1405649229.440237</a></div></td><td><a title="TestCases/MRD8/Flashing_114110/case+bug.py:13"><div class="call">tap((0.87, 0.09))</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405649229.784077"><a id="time1405649229.784077">1405649229.784077</a></div></td><td><div class="returnvalue"><a title="tap">== True</a></div></td>
+             </tr><tr><td></td><td><img class="return:tap" title="1405649224.836118 refreshScreenshot() at TestCases/MRD8/Flashing_114110/case+bug.py:11" src="screenshots/20140718-100704-836252-RHBED246400081.png.00001.png" width="240" alt="screenshots/20140718-100704-836252-RHBED246400081.png.00001.png" /></td></tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405649229.784427"><a id="time1405649229.784427">1405649229.784427</a></div></td><td><a title="TestCases/MRD8/Flashing_114110/case+bug.py:14"><div class="call">reboot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405649268.165474"><a id="time1405649268.165474">1405649268.165474</a></div></td><td><div class="returnvalue"><a title="reboot">== True</a></div></td>
+             </tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405649283.181303"><a id="time1405649283.181303">1405649283.181303</a></div></td><td><a title="TestCases/MRD8/Flashing_114110/case+bug.py:16"><div class="call">swipe((0.51, 0.8), 'east', distance=0.92)</div></a></td>
+             </tr>
+             
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405649283.181623"><a id="time1405649283.181623">1405649283.181623</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtgti.py:1799"><div class="call">drag((367, 1024), (691, 1024))</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405649283.621620"><a id="time1405649283.621620">1405649283.621620</a></div></td><td><div class="returnvalue"><a title="drag">== True</a></div></td>
+             </tr><tr><td></td><td><img class="return:drag" title="" src="screenshots/20140718-100704-836252-RHBED246400081.png.00002.png" width="240" alt="screenshots/20140718-100704-836252-RHBED246400081.png.00002.png" /></td></tr>
+             </table></tr>
+
+             <tr>
+                 <td><div class="time" id="1405649283.621823"><a id="time1405649283.621823">1405649283.621823</a></div></td><td><div class="returnvalue"><a title="swipe">== True</a></div></td>
+             </tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405649283.622438"><a id="time1405649283.622438">1405649283.622438</a></div></td><td><a title="TestCases/MRD8/Flashing_114110/case+bug.py:17"><div class="call">shell('am start -n com.android.settings/.DateTimeSettingsSetupWizard')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405649284.246398"><a id="time1405649284.246398">1405649284.246398</a></div></td><td><div class="returnvalue"><a title="shell">== Starting: Intent { cmp=com.android.settings/.DateTimeSettingsSetupWizard }
+</a></div></td>
+             </tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405649284.247098"><a id="time1405649284.247098">1405649284.247098</a></div></td><td><a title="TestCases/MRD8/Flashing_114110/case+bug.py:18"><div class="call">tap((0.87, 0.09))</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405649284.399838"><a id="time1405649284.399838">1405649284.399838</a></div></td><td><div class="returnvalue"><a title="tap">== True</a></div></td>
+             </tr><tr><td></td><td><img class="return:tap" title="1405649224.836118 refreshScreenshot() at TestCases/MRD8/Flashing_114110/case+bug.py:11" src="screenshots/20140718-100704-836252-RHBED246400081.png.00003.png" width="240" alt="screenshots/20140718-100704-836252-RHBED246400081.png.00003.png" /></td></tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405649284.400181"><a id="time1405649284.400181">1405649284.400181</a></div></td><td><a title="TestCases/MRD8/Flashing_114110/case+bug.py:19"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405649285.229507"><a id="time1405649285.229507">1405649285.229507</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/screenshots/20140718-100804-400240-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405649284.400181 refreshScreenshot() at TestCases/MRD8/Flashing_114110/case+bug.py:19" src="screenshots/20140718-100804-400240-RHBED246400081.png" width="240" alt="screenshots/20140718-100804-400240-RHBED246400081.png" /></td></tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405649285.230106"><a id="time1405649285.230106">1405649285.230106</a></div></td><td><a title="TestCases/MRD8/Flashing_114110/case+bug.py:21"><div class="call">waitBitmap('automatic-time.png')</div></a></td>
+             </tr>
+             
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405649285.230256"><a id="time1405649285.230256">1405649285.230256</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtgti.py:2217"><div class="call">waitAnyBitmap(['automatic-time.png'])</div></a></td>
+             </tr>
+             
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405649285.230547"><a id="time1405649285.230547">1405649285.230547</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtgti.py:2155"><div class="call">findItemsByBitmap('automatic-time.png')</div></a></td>
+             </tr>
+             <tr><td></td><td><img class="call:findItemsByBitmap" title="" src="TestCases/MRD8/Flashing_114110/automatic-time.png"  alt="TestCases/MRD8/Flashing_114110/automatic-time.png" /></td></tr>
+             <tr>
+                 <td><div class="time" id="1405649285.260288"><a id="time1405649285.260288">1405649285.260288</a></div></td><td><div class="returnvalue"><a title="findItemsByBitmap">== not found in</a></div></td>
+             </tr><tr><td></td><td><img class="return:findItemsByBitmap" title="1405649284.400181 refreshScreenshot() at TestCases/MRD8/Flashing_114110/case+bug.py:19" src="screenshots/20140718-100804-400240-RHBED246400081.png" width="240" alt="screenshots/20140718-100804-400240-RHBED246400081.png" /></td></tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405649286.261462"><a id="time1405649286.261462">1405649286.261462</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtgti.py:2121"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405649287.117633"><a id="time1405649287.117633">1405649287.117633</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/screenshots/20140718-100806-261618-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405649286.261462 refreshScreenshot() at /usr/local/lib/python2.7/dist-packages/fmbtgti.py:2121" src="screenshots/20140718-100806-261618-RHBED246400081.png" width="240" alt="screenshots/20140718-100806-261618-RHBED246400081.png" /></td></tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405649287.117918"><a id="time1405649287.117918">1405649287.117918</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtgti.py:2155"><div class="call">findItemsByBitmap('automatic-time.png')</div></a></td>
+             </tr>
+             <tr><td></td><td><img class="call:findItemsByBitmap" title="" src="TestCases/MRD8/Flashing_114110/automatic-time.png"  alt="TestCases/MRD8/Flashing_114110/automatic-time.png" /></td></tr>
+             <tr>
+                 <td><div class="time" id="1405649287.133185"><a id="time1405649287.133185">1405649287.133185</a></div></td><td><div class="returnvalue"><a title="findItemsByBitmap">== not found in</a></div></td>
+             </tr><tr><td></td><td><img class="return:findItemsByBitmap" title="1405649286.261462 refreshScreenshot() at /usr/local/lib/python2.7/dist-packages/fmbtgti.py:2121" src="screenshots/20140718-100806-261618-RHBED246400081.png" width="240" alt="screenshots/20140718-100806-261618-RHBED246400081.png" /></td></tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405649288.134328"><a id="time1405649288.134328">1405649288.134328</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtgti.py:2121"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405649288.982292"><a id="time1405649288.982292">1405649288.982292</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/screenshots/20140718-100808-134483-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405649288.134328 refreshScreenshot() at /usr/local/lib/python2.7/dist-packages/fmbtgti.py:2121" src="screenshots/20140718-100808-134483-RHBED246400081.png" width="240" alt="screenshots/20140718-100808-134483-RHBED246400081.png" /></td></tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405649288.982576"><a id="time1405649288.982576">1405649288.982576</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtgti.py:2155"><div class="call">findItemsByBitmap('automatic-time.png')</div></a></td>
+             </tr>
+             <tr><td></td><td><img class="call:findItemsByBitmap" title="" src="TestCases/MRD8/Flashing_114110/automatic-time.png"  alt="TestCases/MRD8/Flashing_114110/automatic-time.png" /></td></tr>
+             <tr>
+                 <td><div class="time" id="1405649289.002195"><a id="time1405649289.002195">1405649289.002195</a></div></td><td><div class="returnvalue"><a title="findItemsByBitmap">== not found in</a></div></td>
+             </tr><tr><td></td><td><img class="return:findItemsByBitmap" title="1405649288.134328 refreshScreenshot() at /usr/local/lib/python2.7/dist-packages/fmbtgti.py:2121" src="screenshots/20140718-100808-134483-RHBED246400081.png" width="240" alt="screenshots/20140718-100808-134483-RHBED246400081.png" /></td></tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405649290.003381"><a id="time1405649290.003381">1405649290.003381</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtgti.py:2121"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405649290.990271"><a id="time1405649290.990271">1405649290.990271</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/screenshots/20140718-100810-003560-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405649290.003381 refreshScreenshot() at /usr/local/lib/python2.7/dist-packages/fmbtgti.py:2121" src="screenshots/20140718-100810-003560-RHBED246400081.png" width="240" alt="screenshots/20140718-100810-003560-RHBED246400081.png" /></td></tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405649290.990554"><a id="time1405649290.990554">1405649290.990554</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtgti.py:2155"><div class="call">findItemsByBitmap('automatic-time.png')</div></a></td>
+             </tr>
+             <tr><td></td><td><img class="call:findItemsByBitmap" title="" src="TestCases/MRD8/Flashing_114110/automatic-time.png"  alt="TestCases/MRD8/Flashing_114110/automatic-time.png" /></td></tr>
+             <tr>
+                 <td><div class="time" id="1405649291.007855"><a id="time1405649291.007855">1405649291.007855</a></div></td><td><div class="returnvalue"><a title="findItemsByBitmap">== not found in</a></div></td>
+             </tr><tr><td></td><td><img class="return:findItemsByBitmap" title="1405649290.003381 refreshScreenshot() at /usr/local/lib/python2.7/dist-packages/fmbtgti.py:2121" src="screenshots/20140718-100810-003560-RHBED246400081.png" width="240" alt="screenshots/20140718-100810-003560-RHBED246400081.png" /></td></tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405649291.265332"><a id="time1405649291.265332">1405649291.265332</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtgti.py:2121"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405649292.335032"><a id="time1405649292.335032">1405649292.335032</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/screenshots/20140718-100811-265485-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405649291.265332 refreshScreenshot() at /usr/local/lib/python2.7/dist-packages/fmbtgti.py:2121" src="screenshots/20140718-100811-265485-RHBED246400081.png" width="240" alt="screenshots/20140718-100811-265485-RHBED246400081.png" /></td></tr>
+             </table></tr>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405649292.335315"><a id="time1405649292.335315">1405649292.335315</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtgti.py:2155"><div class="call">findItemsByBitmap('automatic-time.png')</div></a></td>
+             </tr>
+             <tr><td></td><td><img class="call:findItemsByBitmap" title="" src="TestCases/MRD8/Flashing_114110/automatic-time.png"  alt="TestCases/MRD8/Flashing_114110/automatic-time.png" /></td></tr>
+             <tr>
+                 <td><div class="time" id="1405649292.359152"><a id="time1405649292.359152">1405649292.359152</a></div></td><td><div class="returnvalue"><a title="findItemsByBitmap">== not found in</a></div></td>
+             </tr><tr><td></td><td><img class="return:findItemsByBitmap" title="1405649291.265332 refreshScreenshot() at /usr/local/lib/python2.7/dist-packages/fmbtgti.py:2121" src="screenshots/20140718-100811-265485-RHBED246400081.png" width="240" alt="screenshots/20140718-100811-265485-RHBED246400081.png" /></td></tr>
+             </table></tr>
+
+             <tr>
+                 <td><div class="time" id="1405649292.359217"><a id="time1405649292.359217">1405649292.359217</a></div></td><td><div class="returnvalue"><a title="waitAnyBitmap">== []</a></div></td>
+             </tr>
+             </table></tr>
+
+             <tr>
+                 <td><div class="time" id="1405649292.359253"><a id="time1405649292.359253">1405649292.359253</a></div></td><td><div class="returnvalue"><a title="waitBitmap">== False</a></div></td>
+             </tr>
+             </table></tr>

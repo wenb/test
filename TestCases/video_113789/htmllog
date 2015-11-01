@@ -1,0 +1,926 @@
+
+            <!DOCTYPE html><html>
+            <head><meta charset="utf-8"><title>fmbtandroid visual log</title>
+            <SCRIPT><!--
+            function showHide(eid){
+                if (document.getElementById(eid).style.display != 'inline'){
+                    document.getElementById(eid).style.display = 'inline';
+                } else {
+                    document.getElementById(eid).style.display = 'none';
+                }
+            }
+            // --></SCRIPT>
+            <style>
+                td { vertical-align: top }
+                ul { list-style-type: none }
+                .funccalls { display: none }
+            </style>
+            </head><body>
+            
+
+<ul><li><table><tr><td><div class="time" id="1405038729.396993"><a id="time1405038729.396993">1405038729.396993</a></div></td><td><div class="step"><a id="blockId0" href="javascript:showHide('S0')">1. &lt;module&gt;</a></div><div class="funccalls" id="S0"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405038729.397129"><a id="time1405038729.397129">1405038729.397129</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">shell('am -n start com.android.gallery3d/com.android.camera.CameraLauncher')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405038729.957341"><a id="time1405038729.957341">1405038729.957341</a></div></td><td><div class="returnvalue"><a title="shell">== usage: am [subcommand] [options]
+usage: am start [-D] [-W] [-P &lt;FILE&gt;] [--start-profiler &lt;FILE&gt;]
+               [--R COUNT] [-S] [--opengl-trace]
+               [--user &lt;USER_ID&gt; | current] &lt;INTENT&gt;
+       am startservice [--user &lt;USER_ID&gt; | current] &lt;INTENT&gt;
+       am force-stop [--user &lt;USER_ID&gt; | all | current] &lt;PACKAGE&gt;
+       am kill [--user &lt;USER_ID&gt; | all | current] &lt;PACKAGE&gt;
+       am kill-all
+       am broadcast [--user &lt;USER_ID&gt; | all | current] &lt;INTENT&gt;
+       am instrument [-r] [-e &lt;NAME&gt; &lt;VALUE&gt;] [-p &lt;FILE&gt;] [-w]
+               [--user &lt;USER_ID&gt; | current]
+               [--no-window-animation] &lt;COMPONENT&gt;
+       am profile start [--user &lt;USER_ID&gt; current] &lt;PROCESS&gt; &lt;FILE&gt;
+       am profile stop [--user &lt;USER_ID&gt; current] [&lt;PROCESS&gt;]
+       am dumpheap [--user &lt;USER_ID&gt; current] [-n] &lt;PROCESS&gt; &lt;FILE&gt;
+       am set-debug-app [-w] [--persistent] &lt;PACKAGE&gt;
+       am clear-debug-app
+       am monitor [--gdb &lt;port&gt;]
+       am screen-compat [on|off] &lt;PACKAGE&gt;
+       am display-size [reset|WxH]
+       am display-density [reset|DENSITY]
+       am to-uri [INTENT]
+       am to-intent-uri [INTENT]
+       am switch-user &lt;USER_ID&gt;
+       am stop-user &lt;USER_ID&gt;
+
+am start: start an Activity.  Options are:
+    -D: enable debugging
+    -W: wait for launch to complete
+    --start-profiler &lt;FILE&gt;: start profiler and send results to &lt;FILE&gt;
+    -P &lt;FILE&gt;: like above, but profiling stops when app goes idle
+    -R: repeat the activity launch &lt;COUNT&gt; times.  Prior to each repeat,
+        the top activity will be finished.
+    -S: force stop the target app before starting the activity
+    --opengl-trace: enable tracing of OpenGL functions
+    --user &lt;USER_ID&gt; | current: Specify which user to run as; if not
+        specified then run as the current user.
+
+am startservice: start a Service.  Options are:
+    --user &lt;USER_ID&gt; | current: Specify which user to run as; if not
+        specified then run as the current user.
+
+am force-stop: force stop everything associated with &lt;PACKAGE&gt;.
+    --user &lt;USER_ID&gt; | all | current: Specify user to force stop;
+        all users if not specified.
+
+am kill: Kill all processes associated with &lt;PACKAGE&gt;.  Only kills.
+  processes that are safe to kill -- that is, will not impact the user
+  experience.
+    --user &lt;USER_ID&gt; | all | current: Specify user whose processes to kill;
+        all users if not specified.
+
+am kill-all: Kill all background processes.
+
+am broadcast: send a broadcast Intent.  Options are:
+    --user &lt;USER_ID&gt; | all | current: Specify which user to send to; if not
+        specified then send to all users.
+
+am instrument: start an Instrumentation.  Typically this target &lt;COMPONENT&gt;
+  is the form &lt;TEST_PACKAGE&gt;/&lt;RUNNER_CLASS&gt;.  Options are:
+    -r: print raw results (otherwise decode REPORT_KEY_STREAMRESULT).  Use with
+        [-e perf true] to generate raw output for performance measurements.
+    -e &lt;NAME&gt; &lt;VALUE&gt;: set argument &lt;NAME&gt; to &lt;VALUE&gt;.  For test runners a
+        common form is [-e &lt;testrunner_flag&gt; &lt;value&gt;[,&lt;value&gt;...]].
+    -p &lt;FILE&gt;: write profiling data to &lt;FILE&gt;
+    -w: wait for instrumentation to finish before returning.  Required for
+        test runners.
+    --user &lt;USER_ID&gt; | current: Specify user instrumentation runs in;
+        current user if not specified.
+    --no-window-animation: turn off window animations will running.
+
+am profile: start and stop profiler on a process.  The given &lt;PROCESS&gt; argument
+  may be either a process name or pid.  Options are:
+    --user &lt;USER_ID&gt; | current: When supplying a process name,
+        specify user of process to profile; uses current user if not specified.
+
+am dumpheap: dump the heap of a process.  The given &lt;PROCESS&gt; argument may
+  be either a process name or pid.  Options are:
+    -n: dump native heap instead of managed heap
+    --user &lt;USER_ID&gt; | current: When supplying a process name,
+        specify user of process to dump; uses current user if not specified.
+
+am set-debug-app: set application &lt;PACKAGE&gt; to debug.  Options are:
+    -w: wait for debugger when application starts
+    --persistent: retain this value
+
+am clear-debug-app: clear the previously set-debug-app.
+
+am bug-report: request bug report generation; will launch UI
+    when done to select where it should be delivered.
+am monitor: start monitoring for crashes or ANRs.
+    --gdb: start gdbserv on the given port at crash/ANR
+
+am screen-compat: control screen compatibility mode of &lt;PACKAGE&gt;.
+
+am display-size: override display size.
+
+am display-density: override display density.
+
+am to-uri: print the given Intent specification as a URI.
+
+am to-intent-uri: print the given Intent specification as an intent: URI.
+
+am switch-user: switch to put USER_ID in the foreground, starting
+  execution of that user if it is currently stopped.
+
+am stop-user: stop execution of USER_ID, not allowing it to run any
+  code until a later explicit switch to it.
+
+&lt;INTENT&gt; specifications include these flags and arguments:
+    [-a &lt;ACTION&gt;] [-d &lt;DATA_URI&gt;] [-t &lt;MIME_TYPE&gt;]
+    [-c &lt;CATEGORY&gt; [-c &lt;CATEGORY&gt;] ...]
+    [-e|--es &lt;EXTRA_KEY&gt; &lt;EXTRA_STRING_VALUE&gt; ...]
+    [--esn &lt;EXTRA_KEY&gt; ...]
+    [--ez &lt;EXTRA_KEY&gt; &lt;EXTRA_BOOLEAN_VALUE&gt; ...]
+    [--ei &lt;EXTRA_KEY&gt; &lt;EXTRA_INT_VALUE&gt; ...]
+    [--el &lt;EXTRA_KEY&gt; &lt;EXTRA_LONG_VALUE&gt; ...]
+    [--ef &lt;EXTRA_KEY&gt; &lt;EXTRA_FLOAT_VALUE&gt; ...]
+    [--eu &lt;EXTRA_KEY&gt; &lt;EXTRA_URI_VALUE&gt; ...]
+    [--ecn &lt;EXTRA_KEY&gt; &lt;EXTRA_COMPONENT_NAME_VALUE&gt;]
+    [--eia &lt;EXTRA_KEY&gt; &lt;EXTRA_INT_VALUE&gt;[,&lt;EXTRA_INT_VALUE...]]
+    [--ela &lt;EXTRA_KEY&gt; &lt;EXTRA_LONG_VALUE&gt;[,&lt;EXTRA_LONG_VALUE...]]
+    [--efa &lt;EXTRA_KEY&gt; &lt;EXTRA_FLOAT_VALUE&gt;[,&lt;EXTRA_FLOAT_VALUE...]]
+    [-n &lt;COMPONENT&gt;] [-f &lt;FLAGS&gt;]
+    [--grant-read-uri-permission] [--grant-write-uri-permission]
+    [--debug-log-resolution] [--exclude-stopped-packages]
+    [--include-stopped-packages]
+    [--activity-brought-to-front] [--activity-clear-top]
+    [--activity-clear-when-task-reset] [--activity-exclude-from-recents]
+    [--activity-launched-from-history] [--activity-multiple-task]
+    [--activity-no-animation] [--activity-no-history]
+    [--activity-no-user-action] [--activity-previous-is-top]
+    [--activity-reorder-to-front] [--activity-reset-task-if-needed]
+    [--activity-single-top] [--activity-clear-task]
+    [--activity-task-on-home]
+    [--receiver-registered-only] [--receiver-replace-pending]
+    [--selector]
+    [&lt;URI&gt; | &lt;PACKAGE&gt; | &lt;COMPONENT&gt;]
+
+Error: Unknown command: -n
+</a></div></td>
+             </tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405038731.398910"><a id="time1405038731.398910">1405038731.398910</a></div></td><td><div class="step"><a id="blockId1" href="javascript:showHide('S1')">2. &lt;module&gt;</a></div><div class="funccalls" id="S1"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405038731.399044"><a id="time1405038731.399044">1405038731.399044</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405038732.774778"><a id="time1405038732.774778">1405038732.774778</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-083211-399166-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405038731.399044 refreshScreenshot() at <string>:1" src="screenshots/20140711-083211-399166-RHBED246400081.png" width="240" alt="screenshots/20140711-083211-399166-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405038732.797513"><a id="time1405038732.797513">1405038732.797513</a></div></td><td><div class="step"><a id="blockId2" href="javascript:showHide('S2')">3. &lt;module&gt;</a></div><div class="funccalls" id="S2"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405038732.797582"><a id="time1405038732.797582">1405038732.797582</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-083211-399166-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405038732.810149"><a id="time1405038732.810149">1405038732.810149</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-083211-399166-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405038732.797582 refreshScreenshot() at <string>:1" src="screenshots/20140711-083211-399166-RHBED246400081.png" width="240" alt="screenshots/20140711-083211-399166-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405038821.838340"><a id="time1405038821.838340">1405038821.838340</a></div></td><td><div class="step"><a id="blockId3" href="javascript:showHide('S3')">4. &lt;module&gt;</a></div><div class="funccalls" id="S3"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405038821.838476"><a id="time1405038821.838476">1405038821.838476</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">shell('am -n start com.android.gallery3d/com.android.camera.CameraLauncher')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405038822.498975"><a id="time1405038822.498975">1405038822.498975</a></div></td><td><div class="returnvalue"><a title="shell">== usage: am [subcommand] [options]
+usage: am start [-D] [-W] [-P &lt;FILE&gt;] [--start-profiler &lt;FILE&gt;]
+               [--R COUNT] [-S] [--opengl-trace]
+               [--user &lt;USER_ID&gt; | current] &lt;INTENT&gt;
+       am startservice [--user &lt;USER_ID&gt; | current] &lt;INTENT&gt;
+       am force-stop [--user &lt;USER_ID&gt; | all | current] &lt;PACKAGE&gt;
+       am kill [--user &lt;USER_ID&gt; | all | current] &lt;PACKAGE&gt;
+       am kill-all
+       am broadcast [--user &lt;USER_ID&gt; | all | current] &lt;INTENT&gt;
+       am instrument [-r] [-e &lt;NAME&gt; &lt;VALUE&gt;] [-p &lt;FILE&gt;] [-w]
+               [--user &lt;USER_ID&gt; | current]
+               [--no-window-animation] &lt;COMPONENT&gt;
+       am profile start [--user &lt;USER_ID&gt; current] &lt;PROCESS&gt; &lt;FILE&gt;
+       am profile stop [--user &lt;USER_ID&gt; current] [&lt;PROCESS&gt;]
+       am dumpheap [--user &lt;USER_ID&gt; current] [-n] &lt;PROCESS&gt; &lt;FILE&gt;
+       am set-debug-app [-w] [--persistent] &lt;PACKAGE&gt;
+       am clear-debug-app
+       am monitor [--gdb &lt;port&gt;]
+       am screen-compat [on|off] &lt;PACKAGE&gt;
+       am display-size [reset|WxH]
+       am display-density [reset|DENSITY]
+       am to-uri [INTENT]
+       am to-intent-uri [INTENT]
+       am switch-user &lt;USER_ID&gt;
+       am stop-user &lt;USER_ID&gt;
+
+am start: start an Activity.  Options are:
+    -D: enable debugging
+    -W: wait for launch to complete
+    --start-profiler &lt;FILE&gt;: start profiler and send results to &lt;FILE&gt;
+    -P &lt;FILE&gt;: like above, but profiling stops when app goes idle
+    -R: repeat the activity launch &lt;COUNT&gt; times.  Prior to each repeat,
+        the top activity will be finished.
+    -S: force stop the target app before starting the activity
+    --opengl-trace: enable tracing of OpenGL functions
+    --user &lt;USER_ID&gt; | current: Specify which user to run as; if not
+        specified then run as the current user.
+
+am startservice: start a Service.  Options are:
+    --user &lt;USER_ID&gt; | current: Specify which user to run as; if not
+        specified then run as the current user.
+
+am force-stop: force stop everything associated with &lt;PACKAGE&gt;.
+    --user &lt;USER_ID&gt; | all | current: Specify user to force stop;
+        all users if not specified.
+
+am kill: Kill all processes associated with &lt;PACKAGE&gt;.  Only kills.
+  processes that are safe to kill -- that is, will not impact the user
+  experience.
+    --user &lt;USER_ID&gt; | all | current: Specify user whose processes to kill;
+        all users if not specified.
+
+am kill-all: Kill all background processes.
+
+am broadcast: send a broadcast Intent.  Options are:
+    --user &lt;USER_ID&gt; | all | current: Specify which user to send to; if not
+        specified then send to all users.
+
+am instrument: start an Instrumentation.  Typically this target &lt;COMPONENT&gt;
+  is the form &lt;TEST_PACKAGE&gt;/&lt;RUNNER_CLASS&gt;.  Options are:
+    -r: print raw results (otherwise decode REPORT_KEY_STREAMRESULT).  Use with
+        [-e perf true] to generate raw output for performance measurements.
+    -e &lt;NAME&gt; &lt;VALUE&gt;: set argument &lt;NAME&gt; to &lt;VALUE&gt;.  For test runners a
+        common form is [-e &lt;testrunner_flag&gt; &lt;value&gt;[,&lt;value&gt;...]].
+    -p &lt;FILE&gt;: write profiling data to &lt;FILE&gt;
+    -w: wait for instrumentation to finish before returning.  Required for
+        test runners.
+    --user &lt;USER_ID&gt; | current: Specify user instrumentation runs in;
+        current user if not specified.
+    --no-window-animation: turn off window animations will running.
+
+am profile: start and stop profiler on a process.  The given &lt;PROCESS&gt; argument
+  may be either a process name or pid.  Options are:
+    --user &lt;USER_ID&gt; | current: When supplying a process name,
+        specify user of process to profile; uses current user if not specified.
+
+am dumpheap: dump the heap of a process.  The given &lt;PROCESS&gt; argument may
+  be either a process name or pid.  Options are:
+    -n: dump native heap instead of managed heap
+    --user &lt;USER_ID&gt; | current: When supplying a process name,
+        specify user of process to dump; uses current user if not specified.
+
+am set-debug-app: set application &lt;PACKAGE&gt; to debug.  Options are:
+    -w: wait for debugger when application starts
+    --persistent: retain this value
+
+am clear-debug-app: clear the previously set-debug-app.
+
+am bug-report: request bug report generation; will launch UI
+    when done to select where it should be delivered.
+am monitor: start monitoring for crashes or ANRs.
+    --gdb: start gdbserv on the given port at crash/ANR
+
+am screen-compat: control screen compatibility mode of &lt;PACKAGE&gt;.
+
+am display-size: override display size.
+
+am display-density: override display density.
+
+am to-uri: print the given Intent specification as a URI.
+
+am to-intent-uri: print the given Intent specification as an intent: URI.
+
+am switch-user: switch to put USER_ID in the foreground, starting
+  execution of that user if it is currently stopped.
+
+am stop-user: stop execution of USER_ID, not allowing it to run any
+  code until a later explicit switch to it.
+
+&lt;INTENT&gt; specifications include these flags and arguments:
+    [-a &lt;ACTION&gt;] [-d &lt;DATA_URI&gt;] [-t &lt;MIME_TYPE&gt;]
+    [-c &lt;CATEGORY&gt; [-c &lt;CATEGORY&gt;] ...]
+    [-e|--es &lt;EXTRA_KEY&gt; &lt;EXTRA_STRING_VALUE&gt; ...]
+    [--esn &lt;EXTRA_KEY&gt; ...]
+    [--ez &lt;EXTRA_KEY&gt; &lt;EXTRA_BOOLEAN_VALUE&gt; ...]
+    [--ei &lt;EXTRA_KEY&gt; &lt;EXTRA_INT_VALUE&gt; ...]
+    [--el &lt;EXTRA_KEY&gt; &lt;EXTRA_LONG_VALUE&gt; ...]
+    [--ef &lt;EXTRA_KEY&gt; &lt;EXTRA_FLOAT_VALUE&gt; ...]
+    [--eu &lt;EXTRA_KEY&gt; &lt;EXTRA_URI_VALUE&gt; ...]
+    [--ecn &lt;EXTRA_KEY&gt; &lt;EXTRA_COMPONENT_NAME_VALUE&gt;]
+    [--eia &lt;EXTRA_KEY&gt; &lt;EXTRA_INT_VALUE&gt;[,&lt;EXTRA_INT_VALUE...]]
+    [--ela &lt;EXTRA_KEY&gt; &lt;EXTRA_LONG_VALUE&gt;[,&lt;EXTRA_LONG_VALUE...]]
+    [--efa &lt;EXTRA_KEY&gt; &lt;EXTRA_FLOAT_VALUE&gt;[,&lt;EXTRA_FLOAT_VALUE...]]
+    [-n &lt;COMPONENT&gt;] [-f &lt;FLAGS&gt;]
+    [--grant-read-uri-permission] [--grant-write-uri-permission]
+    [--debug-log-resolution] [--exclude-stopped-packages]
+    [--include-stopped-packages]
+    [--activity-brought-to-front] [--activity-clear-top]
+    [--activity-clear-when-task-reset] [--activity-exclude-from-recents]
+    [--activity-launched-from-history] [--activity-multiple-task]
+    [--activity-no-animation] [--activity-no-history]
+    [--activity-no-user-action] [--activity-previous-is-top]
+    [--activity-reorder-to-front] [--activity-reset-task-if-needed]
+    [--activity-single-top] [--activity-clear-task]
+    [--activity-task-on-home]
+    [--receiver-registered-only] [--receiver-replace-pending]
+    [--selector]
+    [&lt;URI&gt; | &lt;PACKAGE&gt; | &lt;COMPONENT&gt;]
+
+Error: Unknown command: -n
+</a></div></td>
+             </tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405038825.245979"><a id="time1405038825.245979">1405038825.245979</a></div></td><td><div class="step"><a id="blockId4" href="javascript:showHide('S4')">5. &lt;module&gt;</a></div><div class="funccalls" id="S4"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405038825.246116"><a id="time1405038825.246116">1405038825.246116</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405038826.085245"><a id="time1405038826.085245">1405038826.085245</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-083345-246236-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405038825.246116 refreshScreenshot() at <string>:1" src="screenshots/20140711-083345-246236-RHBED246400081.png" width="240" alt="screenshots/20140711-083345-246236-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405038826.098266"><a id="time1405038826.098266">1405038826.098266</a></div></td><td><div class="step"><a id="blockId5" href="javascript:showHide('S5')">6. &lt;module&gt;</a></div><div class="funccalls" id="S5"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405038826.098320"><a id="time1405038826.098320">1405038826.098320</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-083345-246236-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405038826.111483"><a id="time1405038826.111483">1405038826.111483</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-083345-246236-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405038826.098320 refreshScreenshot() at <string>:1" src="screenshots/20140711-083345-246236-RHBED246400081.png" width="240" alt="screenshots/20140711-083345-246236-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405038831.942025"><a id="time1405038831.942025">1405038831.942025</a></div></td><td><div class="step"><a id="blockId6" href="javascript:showHide('S6')">7. &lt;module&gt;</a></div><div class="funccalls" id="S6"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405038831.942156"><a id="time1405038831.942156">1405038831.942156</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">shell('am -n start com.android.gallery3d/com.android.camera.CameraLauncher')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405038832.423623"><a id="time1405038832.423623">1405038832.423623</a></div></td><td><div class="returnvalue"><a title="shell">== usage: am [subcommand] [options]
+usage: am start [-D] [-W] [-P &lt;FILE&gt;] [--start-profiler &lt;FILE&gt;]
+               [--R COUNT] [-S] [--opengl-trace]
+               [--user &lt;USER_ID&gt; | current] &lt;INTENT&gt;
+       am startservice [--user &lt;USER_ID&gt; | current] &lt;INTENT&gt;
+       am force-stop [--user &lt;USER_ID&gt; | all | current] &lt;PACKAGE&gt;
+       am kill [--user &lt;USER_ID&gt; | all | current] &lt;PACKAGE&gt;
+       am kill-all
+       am broadcast [--user &lt;USER_ID&gt; | all | current] &lt;INTENT&gt;
+       am instrument [-r] [-e &lt;NAME&gt; &lt;VALUE&gt;] [-p &lt;FILE&gt;] [-w]
+               [--user &lt;USER_ID&gt; | current]
+               [--no-window-animation] &lt;COMPONENT&gt;
+       am profile start [--user &lt;USER_ID&gt; current] &lt;PROCESS&gt; &lt;FILE&gt;
+       am profile stop [--user &lt;USER_ID&gt; current] [&lt;PROCESS&gt;]
+       am dumpheap [--user &lt;USER_ID&gt; current] [-n] &lt;PROCESS&gt; &lt;FILE&gt;
+       am set-debug-app [-w] [--persistent] &lt;PACKAGE&gt;
+       am clear-debug-app
+       am monitor [--gdb &lt;port&gt;]
+       am screen-compat [on|off] &lt;PACKAGE&gt;
+       am display-size [reset|WxH]
+       am display-density [reset|DENSITY]
+       am to-uri [INTENT]
+       am to-intent-uri [INTENT]
+       am switch-user &lt;USER_ID&gt;
+       am stop-user &lt;USER_ID&gt;
+
+am start: start an Activity.  Options are:
+    -D: enable debugging
+    -W: wait for launch to complete
+    --start-profiler &lt;FILE&gt;: start profiler and send results to &lt;FILE&gt;
+    -P &lt;FILE&gt;: like above, but profiling stops when app goes idle
+    -R: repeat the activity launch &lt;COUNT&gt; times.  Prior to each repeat,
+        the top activity will be finished.
+    -S: force stop the target app before starting the activity
+    --opengl-trace: enable tracing of OpenGL functions
+    --user &lt;USER_ID&gt; | current: Specify which user to run as; if not
+        specified then run as the current user.
+
+am startservice: start a Service.  Options are:
+    --user &lt;USER_ID&gt; | current: Specify which user to run as; if not
+        specified then run as the current user.
+
+am force-stop: force stop everything associated with &lt;PACKAGE&gt;.
+    --user &lt;USER_ID&gt; | all | current: Specify user to force stop;
+        all users if not specified.
+
+am kill: Kill all processes associated with &lt;PACKAGE&gt;.  Only kills.
+  processes that are safe to kill -- that is, will not impact the user
+  experience.
+    --user &lt;USER_ID&gt; | all | current: Specify user whose processes to kill;
+        all users if not specified.
+
+am kill-all: Kill all background processes.
+
+am broadcast: send a broadcast Intent.  Options are:
+    --user &lt;USER_ID&gt; | all | current: Specify which user to send to; if not
+        specified then send to all users.
+
+am instrument: start an Instrumentation.  Typically this target &lt;COMPONENT&gt;
+  is the form &lt;TEST_PACKAGE&gt;/&lt;RUNNER_CLASS&gt;.  Options are:
+    -r: print raw results (otherwise decode REPORT_KEY_STREAMRESULT).  Use with
+        [-e perf true] to generate raw output for performance measurements.
+    -e &lt;NAME&gt; &lt;VALUE&gt;: set argument &lt;NAME&gt; to &lt;VALUE&gt;.  For test runners a
+        common form is [-e &lt;testrunner_flag&gt; &lt;value&gt;[,&lt;value&gt;...]].
+    -p &lt;FILE&gt;: write profiling data to &lt;FILE&gt;
+    -w: wait for instrumentation to finish before returning.  Required for
+        test runners.
+    --user &lt;USER_ID&gt; | current: Specify user instrumentation runs in;
+        current user if not specified.
+    --no-window-animation: turn off window animations will running.
+
+am profile: start and stop profiler on a process.  The given &lt;PROCESS&gt; argument
+  may be either a process name or pid.  Options are:
+    --user &lt;USER_ID&gt; | current: When supplying a process name,
+        specify user of process to profile; uses current user if not specified.
+
+am dumpheap: dump the heap of a process.  The given &lt;PROCESS&gt; argument may
+  be either a process name or pid.  Options are:
+    -n: dump native heap instead of managed heap
+    --user &lt;USER_ID&gt; | current: When supplying a process name,
+        specify user of process to dump; uses current user if not specified.
+
+am set-debug-app: set application &lt;PACKAGE&gt; to debug.  Options are:
+    -w: wait for debugger when application starts
+    --persistent: retain this value
+
+am clear-debug-app: clear the previously set-debug-app.
+
+am bug-report: request bug report generation; will launch UI
+    when done to select where it should be delivered.
+am monitor: start monitoring for crashes or ANRs.
+    --gdb: start gdbserv on the given port at crash/ANR
+
+am screen-compat: control screen compatibility mode of &lt;PACKAGE&gt;.
+
+am display-size: override display size.
+
+am display-density: override display density.
+
+am to-uri: print the given Intent specification as a URI.
+
+am to-intent-uri: print the given Intent specification as an intent: URI.
+
+am switch-user: switch to put USER_ID in the foreground, starting
+  execution of that user if it is currently stopped.
+
+am stop-user: stop execution of USER_ID, not allowing it to run any
+  code until a later explicit switch to it.
+
+&lt;INTENT&gt; specifications include these flags and arguments:
+    [-a &lt;ACTION&gt;] [-d &lt;DATA_URI&gt;] [-t &lt;MIME_TYPE&gt;]
+    [-c &lt;CATEGORY&gt; [-c &lt;CATEGORY&gt;] ...]
+    [-e|--es &lt;EXTRA_KEY&gt; &lt;EXTRA_STRING_VALUE&gt; ...]
+    [--esn &lt;EXTRA_KEY&gt; ...]
+    [--ez &lt;EXTRA_KEY&gt; &lt;EXTRA_BOOLEAN_VALUE&gt; ...]
+    [--ei &lt;EXTRA_KEY&gt; &lt;EXTRA_INT_VALUE&gt; ...]
+    [--el &lt;EXTRA_KEY&gt; &lt;EXTRA_LONG_VALUE&gt; ...]
+    [--ef &lt;EXTRA_KEY&gt; &lt;EXTRA_FLOAT_VALUE&gt; ...]
+    [--eu &lt;EXTRA_KEY&gt; &lt;EXTRA_URI_VALUE&gt; ...]
+    [--ecn &lt;EXTRA_KEY&gt; &lt;EXTRA_COMPONENT_NAME_VALUE&gt;]
+    [--eia &lt;EXTRA_KEY&gt; &lt;EXTRA_INT_VALUE&gt;[,&lt;EXTRA_INT_VALUE...]]
+    [--ela &lt;EXTRA_KEY&gt; &lt;EXTRA_LONG_VALUE&gt;[,&lt;EXTRA_LONG_VALUE...]]
+    [--efa &lt;EXTRA_KEY&gt; &lt;EXTRA_FLOAT_VALUE&gt;[,&lt;EXTRA_FLOAT_VALUE...]]
+    [-n &lt;COMPONENT&gt;] [-f &lt;FLAGS&gt;]
+    [--grant-read-uri-permission] [--grant-write-uri-permission]
+    [--debug-log-resolution] [--exclude-stopped-packages]
+    [--include-stopped-packages]
+    [--activity-brought-to-front] [--activity-clear-top]
+    [--activity-clear-when-task-reset] [--activity-exclude-from-recents]
+    [--activity-launched-from-history] [--activity-multiple-task]
+    [--activity-no-animation] [--activity-no-history]
+    [--activity-no-user-action] [--activity-previous-is-top]
+    [--activity-reorder-to-front] [--activity-reset-task-if-needed]
+    [--activity-single-top] [--activity-clear-task]
+    [--activity-task-on-home]
+    [--receiver-registered-only] [--receiver-replace-pending]
+    [--selector]
+    [&lt;URI&gt; | &lt;PACKAGE&gt; | &lt;COMPONENT&gt;]
+
+Error: Unknown command: -n
+</a></div></td>
+             </tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405038843.718476"><a id="time1405038843.718476">1405038843.718476</a></div></td><td><div class="step"><a id="blockId7" href="javascript:showHide('S7')">8. &lt;module&gt;</a></div><div class="funccalls" id="S7"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405038843.718611"><a id="time1405038843.718611">1405038843.718611</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405038845.104810"><a id="time1405038845.104810">1405038845.104810</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-083403-718732-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405038843.718611 refreshScreenshot() at <string>:1" src="screenshots/20140711-083403-718732-RHBED246400081.png" width="240" alt="screenshots/20140711-083403-718732-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405038845.127217"><a id="time1405038845.127217">1405038845.127217</a></div></td><td><div class="step"><a id="blockId8" href="javascript:showHide('S8')">9. &lt;module&gt;</a></div><div class="funccalls" id="S8"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405038845.127286"><a id="time1405038845.127286">1405038845.127286</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-083403-718732-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405038845.139944"><a id="time1405038845.139944">1405038845.139944</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-083403-718732-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405038845.127286 refreshScreenshot() at <string>:1" src="screenshots/20140711-083403-718732-RHBED246400081.png" width="240" alt="screenshots/20140711-083403-718732-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405038955.717253"><a id="time1405038955.717253">1405038955.717253</a></div></td><td><div class="step"><a id="blockId9" href="javascript:showHide('S9')">10. &lt;module&gt;</a></div><div class="funccalls" id="S9"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405038955.717407"><a id="time1405038955.717407">1405038955.717407</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">shell('am start -n com.android.gallery3d/com.android.camera.CameraLauncher')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405038956.304144"><a id="time1405038956.304144">1405038956.304144</a></div></td><td><div class="returnvalue"><a title="shell">== Starting: Intent { cmp=com.android.gallery3d/com.android.camera.CameraLauncher }
+</a></div></td>
+             </tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405038974.762655"><a id="time1405038974.762655">1405038974.762655</a></div></td><td><div class="step"><a id="blockId10" href="javascript:showHide('S10')">11. &lt;module&gt;</a></div><div class="funccalls" id="S10"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405038974.762793"><a id="time1405038974.762793">1405038974.762793</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405038975.621606"><a id="time1405038975.621606">1405038975.621606</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-083614-762911-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405038974.762793 refreshScreenshot() at <string>:1" src="screenshots/20140711-083614-762911-RHBED246400081.png" width="240" alt="screenshots/20140711-083614-762911-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405038975.633451"><a id="time1405038975.633451">1405038975.633451</a></div></td><td><div class="step"><a id="blockId11" href="javascript:showHide('S11')">12. &lt;module&gt;</a></div><div class="funccalls" id="S11"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405038975.633503"><a id="time1405038975.633503">1405038975.633503</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-083614-762911-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405038975.646049"><a id="time1405038975.646049">1405038975.646049</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-083614-762911-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405038975.633503 refreshScreenshot() at <string>:1" src="screenshots/20140711-083614-762911-RHBED246400081.png" width="240" alt="screenshots/20140711-083614-762911-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405038975.658559"><a id="time1405038975.658559">1405038975.658559</a></div></td><td><div class="step"><a id="blockId12" href="javascript:showHide('S12')">13. &lt;module&gt;</a></div><div class="funccalls" id="S12"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405038975.658610"><a id="time1405038975.658610">1405038975.658610</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-083614-762911-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405038975.669194"><a id="time1405038975.669194">1405038975.669194</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-083614-762911-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405038975.658610 refreshScreenshot() at <string>:1" src="screenshots/20140711-083614-762911-RHBED246400081.png" width="240" alt="screenshots/20140711-083614-762911-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405038978.402000"><a id="time1405038978.402000">1405038978.402000</a></div></td><td><div class="step"><a id="blockId13" href="javascript:showHide('S13')">14. &lt;module&gt;</a></div><div class="funccalls" id="S13"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405038978.402131"><a id="time1405038978.402131">1405038978.402131</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">drag((0.34, 0.11), (0.1, 0.94))</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405038978.945131"><a id="time1405038978.945131">1405038978.945131</a></div></td><td><div class="returnvalue"><a title="drag">== True</a></div></td>
+             </tr><tr><td></td><td><img class="return:drag" title="" src="screenshots/20140711-083614-762911-RHBED246400081.png.00001.png" width="240" alt="screenshots/20140711-083614-762911-RHBED246400081.png.00001.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405038986.721952"><a id="time1405038986.721952">1405038986.721952</a></div></td><td><div class="step"><a id="blockId14" href="javascript:showHide('S14')">15. &lt;module&gt;</a></div><div class="funccalls" id="S14"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405038986.722083"><a id="time1405038986.722083">1405038986.722083</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">tap((0.13, 0.96))</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405038986.810206"><a id="time1405038986.810206">1405038986.810206</a></div></td><td><div class="returnvalue"><a title="tap">== True</a></div></td>
+             </tr><tr><td></td><td><img class="return:tap" title="1405038975.658610 refreshScreenshot() at <string>:1" src="screenshots/20140711-083614-762911-RHBED246400081.png.00002.png" width="240" alt="screenshots/20140711-083614-762911-RHBED246400081.png.00002.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405038999.363735"><a id="time1405038999.363735">1405038999.363735</a></div></td><td><div class="step"><a id="blockId15" href="javascript:showHide('S15')">16. &lt;module&gt;</a></div><div class="funccalls" id="S15"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405038999.363880"><a id="time1405038999.363880">1405038999.363880</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405039000.100810"><a id="time1405039000.100810">1405039000.100810</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-083639-364000-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405038999.363880 refreshScreenshot() at <string>:1" src="screenshots/20140711-083639-364000-RHBED246400081.png" width="240" alt="screenshots/20140711-083639-364000-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405039000.113212"><a id="time1405039000.113212">1405039000.113212</a></div></td><td><div class="step"><a id="blockId16" href="javascript:showHide('S16')">17. &lt;module&gt;</a></div><div class="funccalls" id="S16"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405039000.113271"><a id="time1405039000.113271">1405039000.113271</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-083639-364000-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405039000.125831"><a id="time1405039000.125831">1405039000.125831</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-083639-364000-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405039000.113271 refreshScreenshot() at <string>:1" src="screenshots/20140711-083639-364000-RHBED246400081.png" width="240" alt="screenshots/20140711-083639-364000-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405039000.138643"><a id="time1405039000.138643">1405039000.138643</a></div></td><td><div class="step"><a id="blockId17" href="javascript:showHide('S17')">18. &lt;module&gt;</a></div><div class="funccalls" id="S17"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405039000.138694"><a id="time1405039000.138694">1405039000.138694</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-083639-364000-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405039000.149647"><a id="time1405039000.149647">1405039000.149647</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-083639-364000-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405039000.138694 refreshScreenshot() at <string>:1" src="screenshots/20140711-083639-364000-RHBED246400081.png" width="240" alt="screenshots/20140711-083639-364000-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405039003.513812"><a id="time1405039003.513812">1405039003.513812</a></div></td><td><div class="step"><a id="blockId18" href="javascript:showHide('S18')">19. &lt;module&gt;</a></div><div class="funccalls" id="S18"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405039003.513946"><a id="time1405039003.513946">1405039003.513946</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">tap((0.17, 0.8))</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405039003.598051"><a id="time1405039003.598051">1405039003.598051</a></div></td><td><div class="returnvalue"><a title="tap">== True</a></div></td>
+             </tr><tr><td></td><td><img class="return:tap" title="1405039000.138694 refreshScreenshot() at <string>:1" src="screenshots/20140711-083639-364000-RHBED246400081.png.00001.png" width="240" alt="screenshots/20140711-083639-364000-RHBED246400081.png.00001.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405039023.043717"><a id="time1405039023.043717">1405039023.043717</a></div></td><td><div class="step"><a id="blockId19" href="javascript:showHide('S19')">20. &lt;module&gt;</a></div><div class="funccalls" id="S19"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405039023.043846"><a id="time1405039023.043846">1405039023.043846</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405039023.832409"><a id="time1405039023.832409">1405039023.832409</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-083703-043976-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405039023.043846 refreshScreenshot() at <string>:1" src="screenshots/20140711-083703-043976-RHBED246400081.png" width="240" alt="screenshots/20140711-083703-043976-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405039023.844602"><a id="time1405039023.844602">1405039023.844602</a></div></td><td><div class="step"><a id="blockId20" href="javascript:showHide('S20')">21. &lt;module&gt;</a></div><div class="funccalls" id="S20"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405039023.844650"><a id="time1405039023.844650">1405039023.844650</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-083703-043976-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405039023.856773"><a id="time1405039023.856773">1405039023.856773</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-083703-043976-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405039023.844650 refreshScreenshot() at <string>:1" src="screenshots/20140711-083703-043976-RHBED246400081.png" width="240" alt="screenshots/20140711-083703-043976-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405039023.869742"><a id="time1405039023.869742">1405039023.869742</a></div></td><td><div class="step"><a id="blockId21" href="javascript:showHide('S21')">22. &lt;module&gt;</a></div><div class="funccalls" id="S21"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405039023.869793"><a id="time1405039023.869793">1405039023.869793</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-083703-043976-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405039023.880501"><a id="time1405039023.880501">1405039023.880501</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-083703-043976-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405039023.869793 refreshScreenshot() at <string>:1" src="screenshots/20140711-083703-043976-RHBED246400081.png" width="240" alt="screenshots/20140711-083703-043976-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405039028.697758"><a id="time1405039028.697758">1405039028.697758</a></div></td><td><div class="step"><a id="blockId22" href="javascript:showHide('S22')">23. &lt;module&gt;</a></div><div class="funccalls" id="S22"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405039028.698159"><a id="time1405039028.698159">1405039028.698159</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">tap((0.52, 0.94))</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405039028.784389"><a id="time1405039028.784389">1405039028.784389</a></div></td><td><div class="returnvalue"><a title="tap">== True</a></div></td>
+             </tr><tr><td></td><td><img class="return:tap" title="1405039023.869793 refreshScreenshot() at <string>:1" src="screenshots/20140711-083703-043976-RHBED246400081.png.00001.png" width="240" alt="screenshots/20140711-083703-043976-RHBED246400081.png.00001.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405039047.163738"><a id="time1405039047.163738">1405039047.163738</a></div></td><td><div class="step"><a id="blockId23" href="javascript:showHide('S23')">24. &lt;module&gt;</a></div><div class="funccalls" id="S23"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405039047.163887"><a id="time1405039047.163887">1405039047.163887</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405039047.955219"><a id="time1405039047.955219">1405039047.955219</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-083727-164004-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405039047.163887 refreshScreenshot() at <string>:1" src="screenshots/20140711-083727-164004-RHBED246400081.png" width="240" alt="screenshots/20140711-083727-164004-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405039047.967484"><a id="time1405039047.967484">1405039047.967484</a></div></td><td><div class="step"><a id="blockId24" href="javascript:showHide('S24')">25. &lt;module&gt;</a></div><div class="funccalls" id="S24"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405039047.967533"><a id="time1405039047.967533">1405039047.967533</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-083727-164004-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405039047.979771"><a id="time1405039047.979771">1405039047.979771</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-083727-164004-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405039047.967533 refreshScreenshot() at <string>:1" src="screenshots/20140711-083727-164004-RHBED246400081.png" width="240" alt="screenshots/20140711-083727-164004-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405039047.992606"><a id="time1405039047.992606">1405039047.992606</a></div></td><td><div class="step"><a id="blockId25" href="javascript:showHide('S25')">26. &lt;module&gt;</a></div><div class="funccalls" id="S25"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405039047.992657"><a id="time1405039047.992657">1405039047.992657</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-083727-164004-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405039048.003046"><a id="time1405039048.003046">1405039048.003046</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-083727-164004-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405039047.992657 refreshScreenshot() at <string>:1" src="screenshots/20140711-083727-164004-RHBED246400081.png" width="240" alt="screenshots/20140711-083727-164004-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405039050.537647"><a id="time1405039050.537647">1405039050.537647</a></div></td><td><div class="step"><a id="blockId26" href="javascript:showHide('S26')">27. &lt;module&gt;</a></div><div class="funccalls" id="S26"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405039050.537779"><a id="time1405039050.537779">1405039050.537779</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">tap((0.5, 0.93))</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405039050.624517"><a id="time1405039050.624517">1405039050.624517</a></div></td><td><div class="returnvalue"><a title="tap">== True</a></div></td>
+             </tr><tr><td></td><td><img class="return:tap" title="1405039047.992657 refreshScreenshot() at <string>:1" src="screenshots/20140711-083727-164004-RHBED246400081.png.00001.png" width="240" alt="screenshots/20140711-083727-164004-RHBED246400081.png.00001.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405039065.160796"><a id="time1405039065.160796">1405039065.160796</a></div></td><td><div class="step"><a id="blockId27" href="javascript:showHide('S27')">28. &lt;module&gt;</a></div><div class="funccalls" id="S27"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405039065.160932"><a id="time1405039065.160932">1405039065.160932</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">pressBack()</div></a></td>
+             </tr>
+             
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405039065.161073"><a id="time1405039065.161073">1405039065.161073</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtandroid.py:514"><div class="call">pressKey('KEYCODE_BACK')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405039065.177684"><a id="time1405039065.177684">1405039065.177684</a></div></td><td><div class="returnvalue"><a title="pressKey">== True</a></div></td>
+             </tr>
+             </table></tr>
+
+             <tr>
+                 <td><div class="time" id="1405039065.177806"><a id="time1405039065.177806">1405039065.177806</a></div></td><td><div class="returnvalue"><a title="pressBack">== True</a></div></td>
+             </tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405039069.494090"><a id="time1405039069.494090">1405039069.494090</a></div></td><td><div class="step"><a id="blockId28" href="javascript:showHide('S28')">29. &lt;module&gt;</a></div><div class="funccalls" id="S28"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405039069.494219"><a id="time1405039069.494219">1405039069.494219</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">pressBack()</div></a></td>
+             </tr>
+             
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405039069.494348"><a id="time1405039069.494348">1405039069.494348</a></div></td><td><a title="/usr/local/lib/python2.7/dist-packages/fmbtandroid.py:514"><div class="call">pressKey('KEYCODE_BACK')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405039069.497272"><a id="time1405039069.497272">1405039069.497272</a></div></td><td><div class="returnvalue"><a title="pressKey">== True</a></div></td>
+             </tr>
+             </table></tr>
+
+             <tr>
+                 <td><div class="time" id="1405039069.497407"><a id="time1405039069.497407">1405039069.497407</a></div></td><td><div class="returnvalue"><a title="pressBack">== True</a></div></td>
+             </tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405039271.397756"><a id="time1405039271.397756">1405039271.397756</a></div></td><td><div class="step"><a id="blockId29" href="javascript:showHide('S29')">30. &lt;module&gt;</a></div><div class="funccalls" id="S29"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405039271.397890"><a id="time1405039271.397890">1405039271.397890</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">shell('am start -n com.android.gallery3d/.app.Gallery')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405039272.044085"><a id="time1405039272.044085">1405039272.044085</a></div></td><td><div class="returnvalue"><a title="shell">== Starting: Intent { cmp=com.android.gallery3d/.app.Gallery }
+</a></div></td>
+             </tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405039277.186425"><a id="time1405039277.186425">1405039277.186425</a></div></td><td><div class="step"><a id="blockId30" href="javascript:showHide('S30')">31. &lt;module&gt;</a></div><div class="funccalls" id="S30"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405039277.186562"><a id="time1405039277.186562">1405039277.186562</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405039278.357309"><a id="time1405039278.357309">1405039278.357309</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-084117-186681-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405039277.186562 refreshScreenshot() at <string>:1" src="screenshots/20140711-084117-186681-RHBED246400081.png" width="240" alt="screenshots/20140711-084117-186681-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405039278.378447"><a id="time1405039278.378447">1405039278.378447</a></div></td><td><div class="step"><a id="blockId31" href="javascript:showHide('S31')">32. &lt;module&gt;</a></div><div class="funccalls" id="S31"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405039278.378518"><a id="time1405039278.378518">1405039278.378518</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-084117-186681-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405039278.392457"><a id="time1405039278.392457">1405039278.392457</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-084117-186681-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405039278.378518 refreshScreenshot() at <string>:1" src="screenshots/20140711-084117-186681-RHBED246400081.png" width="240" alt="screenshots/20140711-084117-186681-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405039278.412782"><a id="time1405039278.412782">1405039278.412782</a></div></td><td><div class="step"><a id="blockId32" href="javascript:showHide('S32')">33. &lt;module&gt;</a></div><div class="funccalls" id="S32"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405039278.412842"><a id="time1405039278.412842">1405039278.412842</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-084117-186681-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405039278.426486"><a id="time1405039278.426486">1405039278.426486</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-084117-186681-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405039278.412842 refreshScreenshot() at <string>:1" src="screenshots/20140711-084117-186681-RHBED246400081.png" width="240" alt="screenshots/20140711-084117-186681-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405039281.384319"><a id="time1405039281.384319">1405039281.384319</a></div></td><td><div class="step"><a id="blockId33" href="javascript:showHide('S33')">34. &lt;module&gt;</a></div><div class="funccalls" id="S33"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405039281.384451"><a id="time1405039281.384451">1405039281.384451</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">drag((0.34, 0.33), (0.23, 0.27))</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405039281.821934"><a id="time1405039281.821934">1405039281.821934</a></div></td><td><div class="returnvalue"><a title="drag">== True</a></div></td>
+             </tr><tr><td></td><td><img class="return:drag" title="" src="screenshots/20140711-084117-186681-RHBED246400081.png.00001.png" width="240" alt="screenshots/20140711-084117-186681-RHBED246400081.png.00001.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405039290.744125"><a id="time1405039290.744125">1405039290.744125</a></div></td><td><div class="step"><a id="blockId34" href="javascript:showHide('S34')">35. &lt;module&gt;</a></div><div class="funccalls" id="S34"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405039290.744257"><a id="time1405039290.744257">1405039290.744257</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">tap((0.25, 0.24))</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405039290.907280"><a id="time1405039290.907280">1405039290.907280</a></div></td><td><div class="returnvalue"><a title="tap">== True</a></div></td>
+             </tr><tr><td></td><td><img class="return:tap" title="1405039278.412842 refreshScreenshot() at <string>:1" src="screenshots/20140711-084117-186681-RHBED246400081.png.00002.png" width="240" alt="screenshots/20140711-084117-186681-RHBED246400081.png.00002.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405039390.592204"><a id="time1405039390.592204">1405039390.592204</a></div></td><td><div class="step"><a id="blockId35" href="javascript:showHide('S35')">36. &lt;module&gt;</a></div><div class="funccalls" id="S35"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405039390.592339"><a id="time1405039390.592339">1405039390.592339</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405039392.494643"><a id="time1405039392.494643">1405039392.494643</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-084310-592456-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405039390.592339 refreshScreenshot() at <string>:1" src="screenshots/20140711-084310-592456-RHBED246400081.png" width="240" alt="screenshots/20140711-084310-592456-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405039392.522979"><a id="time1405039392.522979">1405039392.522979</a></div></td><td><div class="step"><a id="blockId36" href="javascript:showHide('S36')">37. &lt;module&gt;</a></div><div class="funccalls" id="S36"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405039392.523049"><a id="time1405039392.523049">1405039392.523049</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-084310-592456-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405039392.535699"><a id="time1405039392.535699">1405039392.535699</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-084310-592456-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405039392.523049 refreshScreenshot() at <string>:1" src="screenshots/20140711-084310-592456-RHBED246400081.png" width="240" alt="screenshots/20140711-084310-592456-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405039392.564812"><a id="time1405039392.564812">1405039392.564812</a></div></td><td><div class="step"><a id="blockId37" href="javascript:showHide('S37')">38. &lt;module&gt;</a></div><div class="funccalls" id="S37"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405039392.564863"><a id="time1405039392.564863">1405039392.564863</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-084310-592456-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405039392.575760"><a id="time1405039392.575760">1405039392.575760</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-084310-592456-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405039392.564863 refreshScreenshot() at <string>:1" src="screenshots/20140711-084310-592456-RHBED246400081.png" width="240" alt="screenshots/20140711-084310-592456-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405039477.245409"><a id="time1405039477.245409">1405039477.245409</a></div></td><td><div class="step"><a id="blockId38" href="javascript:showHide('S38')">39. &lt;module&gt;</a></div><div class="funccalls" id="S38"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405039477.245621"><a id="time1405039477.245621">1405039477.245621</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">findItemsByBitmap('recorded video.png')</div></a></td>
+             </tr>
+             <tr><td></td><td><img class="call:findItemsByBitmap" title="" src="recorded video.png"  alt="recorded video.png" /></td></tr>
+             <tr>
+                 <td><div class="time" id="1405039477.666817"><a id="time1405039477.666817">1405039477.666817</a></div></td><td><div class="returnvalue"><a title="findItemsByBitmap">== ['GUIItem("bitmap", bbox=(100, 254, 168, 308), bitmap="/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/./recorded video.png", screenshot="/home/slave/tmp/testautomation/TestCases/MRD8/video_113789/screenshots/20140711-084310-592456-RHBED246400081.png")']</a></div></td>
+             </tr><tr><td></td><td><img class="return:findItemsByBitmap" title="1405039392.564863 refreshScreenshot() at <string>:1" src="screenshots/20140711-084310-592456-RHBED246400081.png.00001.png" width="240" alt="screenshots/20140711-084310-592456-RHBED246400081.png.00001.png" /></td></tr>
+             </table></tr>

@@ -1,0 +1,55 @@
+
+            <!DOCTYPE html><html>
+            <head><meta charset="utf-8"><title>fmbtandroid visual log</title>
+            <SCRIPT><!--
+            function showHide(eid){
+                if (document.getElementById(eid).style.display != 'inline'){
+                    document.getElementById(eid).style.display = 'inline';
+                } else {
+                    document.getElementById(eid).style.display = 'none';
+                }
+            }
+            // --></SCRIPT>
+            <style>
+                td { vertical-align: top }
+                ul { list-style-type: none }
+                .funccalls { display: none }
+            </style>
+            </head><body>
+            
+
+<ul><li><table><tr><td><div class="time" id="1405582369.971339"><a id="time1405582369.971339">1405582369.971339</a></div></td><td><div class="step"><a id="blockId0" href="javascript:showHide('S0')">1. &lt;module&gt;</a></div><div class="funccalls" id="S0"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405582369.971465"><a id="time1405582369.971465">1405582369.971465</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">shell('am start -n com.android.browser/.BrowserActivity')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405582370.555480"><a id="time1405582370.555480">1405582370.555480</a></div></td><td><div class="returnvalue"><a title="shell">== Starting: Intent { cmp=com.android.browser/.BrowserActivity }
+</a></div></td>
+             </tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405582373.153450"><a id="time1405582373.153450">1405582373.153450</a></div></td><td><div class="step"><a id="blockId1" href="javascript:showHide('S1')">2. &lt;module&gt;</a></div><div class="funccalls" id="S1"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405582373.153519"><a id="time1405582373.153519">1405582373.153519</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot()</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405582373.927711"><a id="time1405582373.927711">1405582373.927711</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/CWS_113629/screenshots/20140717-153253-153572-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405582373.153519 refreshScreenshot() at <string>:1" src="screenshots/20140717-153253-153572-RHBED246400081.png" width="240" alt="screenshots/20140717-153253-153572-RHBED246400081.png" /></td></tr>
+             </table></tr>
+</table></div></td></tr></table></ul>
+
+<ul><li><table><tr><td><div class="time" id="1405582373.941595"><a id="time1405582373.941595">1405582373.941595</a></div></td><td><div class="step"><a id="blockId2" href="javascript:showHide('S2')">3. &lt;module&gt;</a></div><div class="funccalls" id="S2"><table>
+
+             <tr><td></td><td><table><tr>
+                 <td><div class="time" id="1405582373.941648"><a id="time1405582373.941648">1405582373.941648</a></div></td><td><a title="&lt;string&gt;:1"><div class="call">refreshScreenshot('/home/slave/tmp/testautomation/TestCases/MRD8/CWS_113629/screenshots/20140717-153253-153572-RHBED246400081.png')</div></a></td>
+             </tr>
+             
+             <tr>
+                 <td><div class="time" id="1405582373.953087"><a id="time1405582373.953087">1405582373.953087</a></div></td><td><div class="returnvalue"><a title="refreshScreenshot">== Screenshot(filename="/home/slave/tmp/testautomation/TestCases/MRD8/CWS_113629/screenshots/20140717-153253-153572-RHBED246400081.png")</a></div></td>
+             </tr><tr><td></td><td><img class="return:refreshScreenshot" title="1405582373.941648 refreshScreenshot() at <string>:1" src="screenshots/20140717-153253-153572-RHBED246400081.png" width="240" alt="screenshots/20140717-153253-153572-RHBED246400081.png" /></td></tr>
+             </table></tr>
